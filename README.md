@@ -10,7 +10,7 @@ Este trabajo está bajo la licencia
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-Traducido al español por [LaMashino](https://github.com/Lamashino). Trabajo original [aquí](https://github.com/pliroforikos/Teaching-B4J)
+Traducido al español por [LaMashino](https://github.com/Lamashino). Trabajo original realizado por [Pliroforikos](https://github.com/pliroforikos/Teaching-B4J)
 
 A continuación, mostramos una serie de lecciones para enseñar B4J a estudiantes de primaria y secundaria:
 
