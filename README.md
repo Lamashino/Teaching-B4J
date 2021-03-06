@@ -14,10 +14,10 @@ Traducido al español por [LaMashino](https://github.com/Lamashino). Trabajo ori
 
 A continuación, mostramos una serie de lecciones para enseñar B4J a estudiantes de primaria y secundaria:
 
-| Lección      |                              | Detalles                                                                                              | Horas |
+| Tema         |                              | Detalles                                                                                              | Horas |
 |--------------|------------------------------|-------------------------------------------------------------------------------------------------------|-------|
 | 1            | El lenguaje B4X              | ·  ¿Por qué usar B4X?                                                                                 | 1     |
-|              |                              | ·    Descarga e instalación de B4J y Java va                                                          |       |
+|              |                              | ·    Descarga e instalación de B4J y Java                                                             |       |
 |              |                              | ·  Personalizar el entorno                                                                            |       |
 | 2            | El significado de problema   | ·  Qué es un problema                                                                                 | 1     |
 |              |                              | ·    Formas de representar un problema                                                                |       |
