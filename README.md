@@ -25,7 +25,7 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·    Cómo ejecutar un programa                                                                        |       |
 |              |                              | ·    Cómo guardar                                                                                     |       |
 |              |                              | ·    La tortuga                                                                                       |       |
-| 4            | Variables y Rango            | ·  Int                                                                                                | 3     |
+| 4            | Variables y Tipos            | ·  Int                                                                                                | 3     |
 |              |                              | ·  Float                                                                                              |       |
 |              |                              | ·    Cómo nombrar una variable                                                                        |       |
 |              |                              | ·  Operadores matemáticos                                                                             |       |
