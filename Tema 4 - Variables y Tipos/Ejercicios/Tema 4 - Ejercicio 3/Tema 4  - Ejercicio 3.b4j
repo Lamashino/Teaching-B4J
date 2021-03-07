@@ -1,0 +1,68 @@
+﻿AppType=JavaFX
+Build1=Default,b4j.example
+File1=Main.bjl
+File2=turtle.png
+FileGroup1=Default Group
+FileGroup2=Default Group
+Group=Default Group
+Library1=jcore
+Library2=jfx
+Library3=b4xturtle
+NumberOfFiles=2
+NumberOfLibraries=3
+NumberOfModules=0
+Version=8.9
+@EndOfDesignText@
+#Region Project Attributes 
+	#MainFormWidth: 600
+	#MainFormHeight: 600 
+#End Region
+
+#Region Form Preperation
+'Template version 1.00
+Sub Process_Globals
+	Private fx As JFX
+	Private MainForm As Form
+	Private xui As XUI 'ignore
+	Private Turtle As B4XTurtle
+	Private MenuBar1 As MenuBar
+End Sub
+
+
+Sub AppStart (Form1 As Form, Args() As String)
+	MainForm = Form1
+	MainForm.RootPane.LoadLayout("Main")
+	MainForm.Show
+End Sub
+
+Sub MenuBar1_Action
+	Dim Mi As MenuItem = Sender
+	Select Mi.Tag
+		Case "Restart"
+			Turtle.Stop.ClearScreen.Home
+			Turtle_Start
+		Case "Exit"
+			MainForm.Close
+	End Select
+End Sub
+#End Region
+
+'B4XTurtle examples: https://www.b4x.com/android/forum/threads/examples-for-teachers-and-parents.116979
+Sub Turtle_Start
+	' Es el final del trimestre y obtuviste tus calificaciones de tres clases: Geometría, Álgebra y Física.
+	' Crea un programa que:
+	' Guarde en 3 variables las calificaciones de estas 3 clases (las calificaciones van de 0 a 10)
+	' Calcule la nota media de sus calificaciones y la muestre con la función “Log”.
+	
+	Private intGeo, intAlg, intFís As Int
+	Private fltMedia As Float
+	
+	intGeo = 14
+	intAlg = 17
+	intFís = 12
+	fltMedia = (intGeo + intAlg + intFís) / 3
+	Log("Media = " & fltMedia)
+	
+	
+End Sub
+
