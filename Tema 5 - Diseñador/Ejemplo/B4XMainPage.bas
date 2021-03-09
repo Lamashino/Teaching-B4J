@@ -28,5 +28,5 @@ End Sub
 'You can see the list of page related events in the B4XPagesManager object. The event name is B4XPage.
 
 Sub Button1_Click
-	xui.MsgboxAsync("Hello world!", "B4X")
+	xui.MsgboxAsync("¡Hola mundo!", "B4X")
 End Sub
