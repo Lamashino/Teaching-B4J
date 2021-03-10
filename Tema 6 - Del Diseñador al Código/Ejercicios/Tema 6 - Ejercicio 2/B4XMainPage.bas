@@ -5,7 +5,6 @@ Type=Class
 Version=9.85
 @EndOfDesignText@
 #Region Shared Files
-#CustomBuildAction: folders ready, %WINDIR%\System32\Robocopy.exe,"..\..\Shared Files" "..\Files"
 'Ctrl + click to sync files: ide://run?file=%WINDIR%\System32\Robocopy.exe&args=..\..\Shared+Files&args=..\Files&FilesSync=True
 #End Region
 
@@ -14,15 +13,15 @@ Version=9.85
 Sub Class_Globals
 	Private Root As B4XView
 	Private xui As XUI
-	Private txtAverage As TextField 
-	Private txtChem As TextField
-	Private txtGymn As TextField
-	Private txtIT As TextField
-	Private txtLiterature As TextField
-	Private txtMaths As TextField
-	Private txtMusic As TextField
-	Private txtPhil As TextField
-	Private txtPhysics As TextField
+	Private txtEdFísica As TextField
+	Private txtFísicaQuímica As TextField
+	Private txtGeoHistoria As TextField
+	Private txtInformática As TextField
+	Private txtInglés As TextField
+	Private txtLengua As TextField
+	Private txtMatemáticas As TextField
+	Private txtMedia As TextField
+	Private txtMúsica As TextField
 End Sub
 
 Public Sub Initialize
@@ -33,52 +32,56 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	Root.LoadLayout("MainPage")
-	txtAverage.Text = 0
-	txtChem.Text = 0
-	txtGymn.Text = 0
-	txtIT.Text = 0
-	txtLiterature.text = 0
-	txtMaths.Text = 0
-	txtMusic.Text = 0
-	txtPhil.Text = 0
-	txtPhysics.Text = 0 
+	
+	' Tan pronto creamos la aplicación, ponemos todas las notas a 0
+	txtEdFísica.Text = 0
+	txtFísicaQuímica.Text = 0
+	txtGeoHistoria.Text = 0
+	txtInformática.Text = 0
+	txtInglés.Text = 0
+	txtLengua.Text = 0
+	txtMatemáticas.Text = 0
+	txtMúsica.Text = 0
+	txtMedia.Text = 0
 End Sub
 
+'You can see the list of page related events in the B4XPagesManager object. The event name is B4XPage.
 
-Private Sub btnCalculate_Click
-	If (txtChem.Text >= 0 And txtChem.Text <= 100 ) Then
-		If ( txtGymn.Text >= 0 And txtGymn.Text <=100 ) Then 
-			If ( txtIT.text >= 0 And txtIT.Text <= 100 ) Then 
-				If ( txtLiterature.text >= 0 And txtLiterature.text <= 100 ) Then 
-					If (txtMaths.text >= 0 And txtMaths.text <= 100 ) Then 
-				 		If (txtMusic.text >= 0 And txtMusic.Text <= 100 ) Then 
-							If  (txtPhil.text >= 0 And txtPhil.text <= 100 ) Then 
-								If (txtPhysics.text >= 0 And txtPhysics.Text <= 100 ) Then
-									txtAverage.Text = (txtChem.Text + txtGymn.Text+txtIT.text+txtLiterature.text+ _
-									txtMaths.text+txtMusic.text+txtPhil.text+txtPhysics.text)/8
-								Else 
-									xui.MsgboxAsync("Physics should be between 0 and 100", "")
-								End If 
+Private Sub btnCalcular_Click
+	If (txtFísicaQuímica.Text >= 0 And txtFísicaQuímica.Text <= 10 ) Then
+		If ( txtEdFísica.Text >= 0 And txtEdFísica.Text <=10 ) Then
+			If ( txtGeoHistoria.text >= 0 And txtGeoHistoria.Text <= 10 ) Then
+				If ( txtInformática.text >= 0 And txtInformática.text <= 10 ) Then
+					If (txtInglés.text >= 0 And txtInglés.text <= 10 ) Then
+						If (txtLengua.text >= 0 And txtLengua.Text <= 10 ) Then
+							If  (txtMatemáticas.text >= 0 And txtMatemáticas.text <= 10 ) Then
+								If (txtMúsica.text >= 0 And txtMúsica.Text <= 10 ) Then
+									' Sumamos todas las notas y dividimos por 8
+									txtMedia.Text = (txtFísicaQuímica.Text + txtEdFísica.Text+txtGeoHistoria.text+ _
+									                txtInformática.text+ txtInglés.text+txtLengua.text+ _ 
+													txtMatemáticas.text+txtMúsica.text)/8
+								Else
+									xui.MsgboxAsync("Música debe estar entre 0 y 10", "")
+								End If
 							Else
-								xui.MsgboxAsync("Philosophy should be between 0 and 100", "")
-							End If 
+								xui.MsgboxAsync("Matemáticas debe estar entre 0 y 10", "")
+							End If
 						Else
-							xui.MsgboxAsync("Music should be between 0 and 100", "")
+							xui.MsgboxAsync("Lengua debe estar entre 0 y 10", "")
 						End If
 					Else
-						xui.MsgboxAsync("Maths should be between 0 and 100", "")
+						xui.MsgboxAsync("Inglés debe estar entre 0 y 10", "")
 					End If
 				Else
-						xui.MsgboxAsync("Lterature should be between 0 and 100", "")
+					xui.MsgboxAsync("Informática debe estar entre 0 y 10", "")
 				End If
 			Else
-				xui.MsgboxAsync("IT should be between 0 and 100", "")
+				xui.MsgboxAsync("Geografía e Historia debe estar entre 0 y 10", "")
 			End If
 		Else
-			xui.MsgboxAsync("Gymnastics should be between 0 and 100", "")
-		End If 
+			xui.MsgboxAsync("Educación Física debe estar entre 0 y 10", "")
+		End If
 	Else
-		xui.MsgboxAsync("Chemistry should be between 0 and 100", "")
+		xui.MsgboxAsync("Física y Química debe estar entre 0 y 10", "")
 	End If
 End Sub
-
