@@ -47,7 +47,7 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·  Sentencia If                                                                                       |       |
 |              |                              | ·  Sentencia If-Else                                                                                  |       |
 |              |                              | ·  Sentencia If-Else IF   - Else                                                                      |       |
-|              |                              | ·  Algoritmos MAX                                                                                     |       |
+|              |                              | ·  Algoritmos para calcular el Máximo                                                                                     |       |
 | 8            | Subrutinas                   | ·  Qué es una subrutina                                                                               | 3     |
 |              |                              | ·    Declaración de una subrutina                                                                     |       |
 |              |                              | ·    Paso de Valores                                                                                  |       |
