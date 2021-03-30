@@ -1,9 +1,8 @@
 b4j.example
 0
-9
+8
 b4xmainpage
 b4xpage1
-b4xpage2
 b4xbitset
 b4xbytesbuilder
 b4xorderedmap
@@ -22,7 +21,7 @@ b4xpagesmanager
 main,appstart,1,0,11,16
 ,mainform,b4xpages,delegate,b4xpages,mpm
 ,mainform,b4xpages,mpm
-b4xpagesmanager,initialize,b4xorderedmap,initialize,b4xset,initialize,b4xpages,internalsetpagesmanager,b4xmainpage,initialize,b4xorderedmap,getsize,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,backgroundstatechanged,b4xorderedmap,remove,b4xpagesmanager,addpageandcreate,b4xpagesmanager,raiseevent,b4xpagesmanager,gettoppage,b4xpagesdelegator,initialize,b4xorderedmap,getvalues,b4xpagesmanager,logevent,b4xpagesmanager,addpage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,getpagefromid,b4xorderedmap,containskey,b4xpagesmanager,showpage,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,updatestackstring
+b4xpagesmanager,initialize,b4xorderedmap,initialize,b4xset,initialize,b4xpages,internalsetpagesmanager,b4xmainpage,initialize,b4xorderedmap,getsize,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,backgroundstatechanged,b4xorderedmap,remove,b4xpagesmanager,addpageandcreate,b4xpagesmanager,raiseevent,b4xpagesmanager,gettoppage,b4xpagesdelegator,initialize,b4xorderedmap,getvalues,b4xpagesmanager,logevent,b4xpagesmanager,addpage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,getpagefromid,b4xorderedmap,containskey,b4xpagesmanager,showpage,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,updatestackstring
 main,mainform_closed,1,0,28,30
 b4xpages,delegate,b4xpages,mpm
 
@@ -50,15 +49,15 @@ main,process_globals,0,1,6,9
 b4xpagesmanager,initialize,1,0,57,93
 b4xpages,delegate,b4xpages,mpm
 b4xpages,mpm
-b4xorderedmap,initialize,b4xset,initialize,b4xpages,internalsetpagesmanager,b4xmainpage,initialize,b4xorderedmap,getsize,b4xorderedmap,put,,createb4xpageinfo,,backgroundstatechanged,b4xorderedmap,remove,,addpageandcreate,,raiseevent,,gettoppage,b4xpagesdelegator,initialize,b4xorderedmap,getvalues,,logevent,,addpage,,createpageifneeded,,getpagefromid,b4xorderedmap,containskey,,showpage,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,raiseeventwithresult,,updatestackstring
+b4xorderedmap,initialize,b4xset,initialize,b4xpages,internalsetpagesmanager,b4xmainpage,initialize,b4xorderedmap,getsize,b4xorderedmap,put,,createb4xpageinfo,,backgroundstatechanged,b4xorderedmap,remove,,addpageandcreate,,raiseevent,,gettoppage,b4xpagesdelegator,initialize,b4xorderedmap,getvalues,,logevent,,addpage,,createpageifneeded,,getpagefromid,b4xorderedmap,containskey,,showpage,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,raiseeventwithresult,,updatestackstring
 b4xpagesmanager,addpage,1,0,126,134
 b4xpages,mpm
 
-b4xorderedmap,containskey,b4xorderedmap,put,,createb4xpageinfo,b4xorderedmap,getsize,,showpage,,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
+b4xorderedmap,containskey,b4xorderedmap,put,,createb4xpageinfo,b4xorderedmap,getsize,,showpage,,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
 b4xpagesmanager,addpageandcreate,1,0,136,139
 b4xpages,mpm
 
-,addpage,,createpageifneeded,,getpagefromid,b4xorderedmap,containskey,b4xorderedmap,put,,createb4xpageinfo,b4xorderedmap,getsize,,showpage,,gettoppage,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
+,addpage,,createpageifneeded,,getpagefromid,b4xorderedmap,containskey,b4xorderedmap,put,,createb4xpageinfo,b4xorderedmap,getsize,,showpage,,gettoppage,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,createpageimpl,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
 b4xpagesmanager,closepage,1,0,194,212
 
 
@@ -78,11 +77,11 @@ b4xpagesmanager,settitle,0,0,345,349
 b4xpagesmanager,showpage,1,0,141,163
 b4xpages,mpm
 
-,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,showpage,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
+,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,showpage,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
 b4xpagesmanager,showpageandremovepreviouspages,1,0,165,192
 b4xpages,mpm
 
-,gettoppage,,showpage,,getpagefromid,,createpageifneeded,,toppagedisappear,b4xset,aslist,b4xset,clear,b4xset,add,,showpageimpl,,toppageappear,b4xset,getsize,b4xorderedmap,get,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xset,remove,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring,b4xorderedmap,clear
+,gettoppage,,showpage,,getpagefromid,,createpageifneeded,,toppagedisappear,b4xset,aslist,b4xset,clear,b4xset,add,,showpageimpl,,toppageappear,b4xset,getsize,b4xorderedmap,get,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xset,remove,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring,b4xorderedmap,clear
 b4xpagesmanager,activity_pause,1,0,617,620
 
 
@@ -134,7 +133,7 @@ b4xpagesmanager,createb4xpageinfo,0,0,402,410
 b4xpagesmanager,createpageifneeded,1,0,334,343
 b4xpages,mpm
 
-b4xorderedmap,getsize,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,showpage,,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
+b4xorderedmap,getsize,,createpageimpl,b4xorderedmap,put,,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,,addpage,b4xorderedmap,containskey,,createb4xpageinfo,,showpage,,getpagefromid,,gettoppage,,createpageifneeded,,toppagedisappear,b4xset,remove,,showpageimpl,b4xset,add,,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,,raiseeventwithresult,b4xorderedmap,remove,,raiseevent,,updatestackstring
 b4xpagesmanager,getpagefromid,0,0,380,387
 
 
@@ -227,19 +226,19 @@ b4xpagesdelegator,class_globals,0,0,1,2
 
 
 
-b4xmainpage,b4xpage_created,1,0,17,22
+b4xmainpage,b4xpage_created,1,0,18,23
 b4xpages,mpm
 
-b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
-b4xmainpage,button1_click,1,0,24,30
+b4xpage1,initialize,b4xpages,addpage,b4xpages,getmanager,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
+b4xmainpage,boton1_click,1,0,26,31
 b4xpages,mpm
 
-b4xpages,showpage,b4xpages,getmanager,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
-b4xmainpage,class_globals,0,0,7,11
+b4xpages,showpage,b4xpages,getmanager,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,b4xpages,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
+b4xmainpage,class_globals,0,0,7,12
 
 
 
-b4xmainpage,initialize,0,0,13,15
+b4xmainpage,initialize,0,0,14,16
 
 
 
@@ -251,7 +250,7 @@ b4xpage1,b4xpage_created,1,0,13,17
 
 
 
-b4xpage1,btnclose_click,1,0,19,21
+b4xpage1,btncerrar_click,1,0,19,21
 b4xpages,mpm
 
 b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
@@ -262,11 +261,11 @@ b4xpage1,class_globals,0,0,1,6
 b4xpages,addpage,1,0,37,39
 ,mpm
 
-,getmanager,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
+,getmanager,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
 b4xpages,showpage,1,0,50,52
 ,mpm
 
-,getmanager,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
+,getmanager,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
 b4xpages,closepage,1,0,62,64
 ,mpm
 
@@ -278,7 +277,7 @@ b4xpages,getmanager,0,0,14,16
 b4xpages,addpageandcreate,1,0,42,44
 ,mpm
 
-,getmanager,b4xpagesmanager,addpageandcreate,b4xpagesmanager,addpage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,getpagefromid,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,gettoppage,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
+,getmanager,b4xpagesmanager,addpageandcreate,b4xpagesmanager,addpage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,getpagefromid,b4xorderedmap,containskey,b4xorderedmap,put,b4xpagesmanager,createb4xpageinfo,b4xorderedmap,getsize,b4xpagesmanager,showpage,b4xpagesmanager,gettoppage,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xpagesmanager,createpageimpl,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring
 b4xpages,getnativeparent,0,0,82,88
 ,mpm
 
@@ -314,19 +313,7 @@ b4xpages,settitle,0,0,68,70
 b4xpages,showpageandremovepreviouspages,1,0,56,58
 ,mpm
 
-,getmanager,b4xpagesmanager,showpageandremovepreviouspages,b4xpagesmanager,gettoppage,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,aslist,b4xset,clear,b4xset,add,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xset,getsize,b4xorderedmap,get,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xset,remove,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpage2,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring,b4xorderedmap,clear
-b4xpage2,b4xpage_created,0,0,12,16
-
-
-
-b4xpage2,class_globals,0,0,1,4
-
-
-
-b4xpage2,initialize,0,0,7,9
-
-
-
+,getmanager,b4xpagesmanager,showpageandremovepreviouspages,b4xpagesmanager,gettoppage,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,aslist,b4xset,clear,b4xset,add,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xset,getsize,b4xorderedmap,get,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xset,remove,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,b4xpage1,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpage1,initialize,,addpage,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatestackstring,b4xorderedmap,clear
 b4xbitset,class_globals,0,0,1,8
 
 

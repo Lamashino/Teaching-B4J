@@ -10,10 +10,9 @@ Library2=jfx
 Library3=b4xpages
 Module1=|relative|..\B4XMainPage
 Module2=B4XPage1
-Module3=B4XPage2
 NumberOfFiles=2
 NumberOfLibraries=3
-NumberOfModules=3
+NumberOfModules=2
 Version=8.9
 @EndOfDesignText@
 #Region Project Attributes 

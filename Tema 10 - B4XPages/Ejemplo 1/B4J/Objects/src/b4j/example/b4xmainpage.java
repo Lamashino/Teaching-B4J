@@ -33,7 +33,8 @@ public class b4xmainpage extends B4AClass.ImplB4AClass implements BA.SubDelegato
 public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _root = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
-public b4j.example.b4xpage1 _page1 = null;
+public b4j.example.b4xpage1 _página1 = null;
+public anywheresoftware.b4j.objects.ButtonWrapper _boton1 = null;
 public b4j.example.main _main = null;
 public b4j.example.b4xpages _b4xpages = null;
 public b4j.example.b4xcollections _b4xcollections = null;
@@ -51,27 +52,27 @@ RDebugUtils.currentLine=589826;
  //BA.debugLineNum = 589826;BA.debugLine="Root.LoadLayout(\"MainPage\")";
 __ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("MainPage",ba);
 RDebugUtils.currentLine=589827;
- //BA.debugLineNum = 589827;BA.debugLine="page1.Initialize";
-__ref._page1 /*b4j.example.b4xpage1*/ ._initialize /*Object*/ (null,ba);
+ //BA.debugLineNum = 589827;BA.debugLine="página1.Initialize";
+__ref._página1 /*b4j.example.b4xpage1*/ ._initialize /*Object*/ (null,ba);
 RDebugUtils.currentLine=589828;
- //BA.debugLineNum = 589828;BA.debugLine="B4XPages.AddPage(\"mi primera página\", page1)";
-_b4xpages._addpage /*String*/ ("mi primera página",(Object)(__ref._page1 /*b4j.example.b4xpage1*/ ));
+ //BA.debugLineNum = 589828;BA.debugLine="B4XPages.AddPage(\"Mi primera página\", página1)";
+_b4xpages._addpage /*String*/ ("Mi primera página",(Object)(__ref._página1 /*b4j.example.b4xpage1*/ ));
 RDebugUtils.currentLine=589829;
  //BA.debugLineNum = 589829;BA.debugLine="End Sub";
 return "";
 }
-public String  _button1_click(b4j.example.b4xmainpage __ref) throws Exception{
+public String  _boton1_click(b4j.example.b4xmainpage __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xmainpage";
-if (Debug.shouldDelegate(ba, "button1_click", false))
-	 {return ((String) Debug.delegate(ba, "button1_click", null));}
+if (Debug.shouldDelegate(ba, "boton1_click", false))
+	 {return ((String) Debug.delegate(ba, "boton1_click", null));}
 RDebugUtils.currentLine=655360;
- //BA.debugLineNum = 655360;BA.debugLine="Private Sub Button1_Click";
+ //BA.debugLineNum = 655360;BA.debugLine="Private Sub Boton1_Click";
 RDebugUtils.currentLine=655362;
- //BA.debugLineNum = 655362;BA.debugLine="B4XPages.ShowPage(\"mi primera página\")";
-_b4xpages._showpage /*String*/ ("mi primera página");
-RDebugUtils.currentLine=655366;
- //BA.debugLineNum = 655366;BA.debugLine="End Sub";
+ //BA.debugLineNum = 655362;BA.debugLine="B4XPages.ShowPage(\"Mi primera página\")";
+_b4xpages._showpage /*String*/ ("Mi primera página");
+RDebugUtils.currentLine=655365;
+ //BA.debugLineNum = 655365;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4j.example.b4xmainpage __ref) throws Exception{
@@ -86,10 +87,13 @@ RDebugUtils.currentLine=458754;
  //BA.debugLineNum = 458754;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
 RDebugUtils.currentLine=458755;
- //BA.debugLineNum = 458755;BA.debugLine="Private page1 As B4XPage1";
-_page1 = new b4j.example.b4xpage1();
+ //BA.debugLineNum = 458755;BA.debugLine="Private página1 As B4XPage1";
+_página1 = new b4j.example.b4xpage1();
 RDebugUtils.currentLine=458756;
- //BA.debugLineNum = 458756;BA.debugLine="End Sub";
+ //BA.debugLineNum = 458756;BA.debugLine="Private Boton1 As Button";
+_boton1 = new anywheresoftware.b4j.objects.ButtonWrapper();
+RDebugUtils.currentLine=458757;
+ //BA.debugLineNum = 458757;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4j.example.b4xmainpage __ref,anywheresoftware.b4a.BA _ba) throws Exception{

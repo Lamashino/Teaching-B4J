@@ -7,8 +7,8 @@ Version=8.9
 Sub Class_Globals
 	Private Root As B4XView 'ignore
 	Private xui As XUI 'ignore
-	Private btnClose As Button
-	Private lblTitle As Label
+	Private btnCerrar As Button
+	Private lblTítulo As Label
 End Sub
 
 'You can add more parameters here.
@@ -22,7 +22,7 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root.LoadLayout("frmPage1")
 End Sub
 
-Private Sub btnClose_Click
+Private Sub btnCerrar_Click
 	B4XPages.ClosePage(Me)
 End Sub
 

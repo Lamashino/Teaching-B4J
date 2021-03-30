@@ -1,15 +1,12 @@
 ﻿ModuleBookmarks0=
 ModuleBookmarks1=
 ModuleBookmarks2=
-ModuleBookmarks3=
 ModuleBreakpoints0=
 ModuleBreakpoints1=
 ModuleBreakpoints2=
-ModuleBreakpoints3=
 ModuleClosedNodes0=4
 ModuleClosedNodes1=
 ModuleClosedNodes2=
-ModuleClosedNodes3=
-NavigationStack=B4XPage1,B4XPage_Created,17,6,B4XMainPage,Initialize,14,0,B4XPage1,Initialize,9,0,B4XMainPage,Class_Globals,10,5,B4XMainPage,B4XPage_Created,20,4,B4XPage1,btnClose_Click,18,0,B4XPage2,Class_Globals,0,0,B4XPage1,Class_Globals,3,0,B4XMainPage,Button1_Click,27,6
+NavigationStack=Diseñador Visual,MainPage.bjl,-100,5,B4XPage1,Initialize,11,0,Diseñador Visual,frmPage1.bjl,-100,1,B4XPage1,btnCerrar_Click,18,0,B4XPage1,B4XPage_Created,16,2,B4XMainPage,B4XPage_Created,24,0,B4XMainPage,Boton1_Click,30,0,B4XMainPage,Class_Globals,10,5,B4XMainPage,Initialize,16,0
 SelectedBuild=0
-VisibleModules=1,2,3
+VisibleModules=1,2

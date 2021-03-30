@@ -150,7 +150,6 @@ b4xcollections_subs_0._process_globals();
 main.myClass = BA.getDeviceClass ("b4j.example.main");
 b4xmainpage.myClass = BA.getDeviceClass ("b4j.example.b4xmainpage");
 b4xpage1.myClass = BA.getDeviceClass ("b4j.example.b4xpage1");
-b4xpage2.myClass = BA.getDeviceClass ("b4j.example.b4xpage2");
 b4xpages.myClass = BA.getDeviceClass ("b4j.example.b4xpages");
 b4xbitset.myClass = BA.getDeviceClass ("b4j.example.b4xbitset");
 b4xbytesbuilder.myClass = BA.getDeviceClass ("b4j.example.b4xbytesbuilder");

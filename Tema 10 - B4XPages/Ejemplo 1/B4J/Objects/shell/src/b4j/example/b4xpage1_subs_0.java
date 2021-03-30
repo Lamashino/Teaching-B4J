@@ -29,11 +29,11 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
-public static RemoteObject  _btnclose_click(RemoteObject __ref) throws Exception{
+public static RemoteObject  _btncerrar_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("btnClose_Click (b4xpage1) ","b4xpage1",2,__ref.getField(false, "ba"),__ref,19);
-if (RapidSub.canDelegate("btnclose_click")) { return __ref.runUserSub(false, "b4xpage1","btnclose_click", __ref);}
- BA.debugLineNum = 19;BA.debugLine="Private Sub btnClose_Click";
+		Debug.PushSubsStack("btnCerrar_Click (b4xpage1) ","b4xpage1",2,__ref.getField(false, "ba"),__ref,19);
+if (RapidSub.canDelegate("btncerrar_click")) { return __ref.runUserSub(false, "b4xpage1","btncerrar_click", __ref);}
+ BA.debugLineNum = 19;BA.debugLine="Private Sub btnCerrar_Click";
 Debug.ShouldStop(262144);
  BA.debugLineNum = 20;BA.debugLine="B4XPages.ClosePage(Me)";
 Debug.ShouldStop(524288);
@@ -54,10 +54,10 @@ public static RemoteObject  _class_globals(RemoteObject __ref) throws Exception{
 b4xpage1._root = RemoteObject.createNew ("anywheresoftware.b4a.objects.B4XViewWrapper");__ref.setField("_root",b4xpage1._root);
  //BA.debugLineNum = 3;BA.debugLine="Private xui As XUI 'ignore";
 b4xpage1._xui = RemoteObject.createNew ("anywheresoftware.b4a.objects.B4XViewWrapper.XUI");__ref.setField("_xui",b4xpage1._xui);
- //BA.debugLineNum = 4;BA.debugLine="Private btnClose As Button";
-b4xpage1._btnclose = RemoteObject.createNew ("anywheresoftware.b4j.objects.ButtonWrapper");__ref.setField("_btnclose",b4xpage1._btnclose);
- //BA.debugLineNum = 5;BA.debugLine="Private lblTitle As Label";
-b4xpage1._lbltitle = RemoteObject.createNew ("anywheresoftware.b4j.objects.LabelWrapper");__ref.setField("_lbltitle",b4xpage1._lbltitle);
+ //BA.debugLineNum = 4;BA.debugLine="Private btnCerrar As Button";
+b4xpage1._btncerrar = RemoteObject.createNew ("anywheresoftware.b4j.objects.ButtonWrapper");__ref.setField("_btncerrar",b4xpage1._btncerrar);
+ //BA.debugLineNum = 5;BA.debugLine="Private lblTítulo As Label";
+b4xpage1._lbltítulo = RemoteObject.createNew ("anywheresoftware.b4j.objects.LabelWrapper");__ref.setField("_lbltítulo",b4xpage1._lbltítulo);
  //BA.debugLineNum = 6;BA.debugLine="End Sub";
 return RemoteObject.createImmutable("");
 }

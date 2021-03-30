@@ -13,7 +13,8 @@ Version=9.85
 Sub Class_Globals
 	Private Root As B4XView
 	Private xui As XUI
-	Private page1 As B4XPage1
+	Private página1 As B4XPage1
+	Private Boton1 As Button
 End Sub
 
 Public Sub Initialize
@@ -23,15 +24,14 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	Root.LoadLayout("MainPage")
-	page1.Initialize
-	B4XPages.AddPage("mi primera página", page1)
+	página1.Initialize
+	B4XPages.AddPage("Mi primera página", página1)
 End Sub
 
-Private Sub Button1_Click
-	
-	B4XPages.ShowPage("mi primera página")
-	
-	'B4XPages.ShowPageAndRemovePreviousPages("mi primera página")
 
+Private Sub Boton1_Click
+	
+	B4XPages.ShowPage("Mi primera página")
+	
+	'B4XPages.ShowPageAndRemovePreviousPages("Mi primera página")	
 End Sub
-

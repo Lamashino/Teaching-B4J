@@ -33,8 +33,8 @@ public class b4xpage1 extends B4AClass.ImplB4AClass implements BA.SubDelegator{
 public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _root = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
-public anywheresoftware.b4j.objects.ButtonWrapper _btnclose = null;
-public anywheresoftware.b4j.objects.LabelWrapper _lbltitle = null;
+public anywheresoftware.b4j.objects.ButtonWrapper _btncerrar = null;
+public anywheresoftware.b4j.objects.LabelWrapper _lbltítulo = null;
 public b4j.example.main _main = null;
 public b4j.example.b4xpages _b4xpages = null;
 public b4j.example.b4xcollections _b4xcollections = null;
@@ -70,13 +70,13 @@ RDebugUtils.currentLine=851972;
  //BA.debugLineNum = 851972;BA.debugLine="End Sub";
 return "";
 }
-public String  _btnclose_click(b4j.example.b4xpage1 __ref) throws Exception{
+public String  _btncerrar_click(b4j.example.b4xpage1 __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xpage1";
-if (Debug.shouldDelegate(ba, "btnclose_click", false))
-	 {return ((String) Debug.delegate(ba, "btnclose_click", null));}
+if (Debug.shouldDelegate(ba, "btncerrar_click", false))
+	 {return ((String) Debug.delegate(ba, "btncerrar_click", null));}
 RDebugUtils.currentLine=917504;
- //BA.debugLineNum = 917504;BA.debugLine="Private Sub btnClose_Click";
+ //BA.debugLineNum = 917504;BA.debugLine="Private Sub btnCerrar_Click";
 RDebugUtils.currentLine=917505;
  //BA.debugLineNum = 917505;BA.debugLine="B4XPages.ClosePage(Me)";
 _b4xpages._closepage /*String*/ (this);
@@ -96,11 +96,11 @@ RDebugUtils.currentLine=720898;
  //BA.debugLineNum = 720898;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
 RDebugUtils.currentLine=720899;
- //BA.debugLineNum = 720899;BA.debugLine="Private btnClose As Button";
-_btnclose = new anywheresoftware.b4j.objects.ButtonWrapper();
+ //BA.debugLineNum = 720899;BA.debugLine="Private btnCerrar As Button";
+_btncerrar = new anywheresoftware.b4j.objects.ButtonWrapper();
 RDebugUtils.currentLine=720900;
- //BA.debugLineNum = 720900;BA.debugLine="Private lblTitle As Label";
-_lbltitle = new anywheresoftware.b4j.objects.LabelWrapper();
+ //BA.debugLineNum = 720900;BA.debugLine="Private lblTítulo As Label";
+_lbltítulo = new anywheresoftware.b4j.objects.LabelWrapper();
 RDebugUtils.currentLine=720901;
  //BA.debugLineNum = 720901;BA.debugLine="End Sub";
 return "";
