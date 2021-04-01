@@ -5,6 +5,8 @@
  Autor original: [Prokopis Leon](https://github.com/pliroforikos)
 
  Traducido al español por [José Miguel López](https://github.com/Lamashino)
+ 
+ ![Creative Commons 4.0](media/cc.png)
 
 # Tema 2 - El significado de Problema
 
@@ -95,3 +97,5 @@ Algoritmo.**
 Finalmente, tras aplicar la solución es necesario probar con varios
 datos, para examinar si conduce a resultados correctos cada vez que se
 realiza sin situaciones problemáticas.
+
+![Dibujo 1. Los pasos](media/tema1%20-%20dibujo1.png)
