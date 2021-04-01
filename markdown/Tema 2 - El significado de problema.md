@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/air.css">
+
 # **Programación con B4X**
 
  Version 1.0, marzo 2021
@@ -65,7 +67,7 @@ afectará el desarrollo de la solución. Incluye los siguientes pasos:
    Continuando con el ejemplo anterior, la información es la x de la
    ecuación ax + b = 0. 
 
-### Buscando una solución o un conjunto de soluciones.
+### Buscando una solución o un conjunto de soluciones
 
 Una vez que hemos reconocido los datos y lo que se solicita, se debe
 buscar una solución para solucionar el problema. A menudo eso no es
