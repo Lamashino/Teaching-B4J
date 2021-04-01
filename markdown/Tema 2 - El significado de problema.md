@@ -8,18 +8,15 @@
 
 # Tema 2 - El significado de Problema
 
->:clock3: 1 hora
+**:clock3: 1 hora**
 
-| Lo que los estudiantes aprenderán |
-|-----------------------------------|
-|•   Comprender el problema         |
-|•	¿Qué es un problema? |
-|•	¿Qué son los datos? |
-|•	¿Qué es información? |
-|•	Qué pasos deben tomarse para resolver un problema. |
-|•	Qué es el algoritmo.|
-|----------------------|
-
+   | Lo que los estudiantes aprenderán                  |
+   |:---------------------------------------------------|
+   |• ¿Qué es un problema?                              |
+   |• ¿Qué son los datos?                               |
+   |• ¿Qué es información?                              |
+   |• Qué pasos deben tomarse para resolver un problema |
+   |• Qué es el algoritmo                               |
 
 
 ## El concepto de problema
@@ -60,7 +57,7 @@ afectará el desarrollo de la solución. Incluye los siguientes pasos:
    resolver un problema. Por ejemplo, en una ecuación ax + b = 0, los
    datos son los factores a y b.
 
-3. **Encontrar lo que se pide **
+3. **Encontrar lo que se pide**
 
    La información que necesitamos encontrar para solucionar el problema.
    Continuando con el ejemplo anterior, la información es la x de la
