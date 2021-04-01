@@ -73,10 +73,10 @@ conducir a una solución **siempre** que surja el mismo problema y,
 además, deben realizarse en **un período relativamente corto** de
 tiempo.
 
-**En matemáticas y ciencias de la computación, un algoritmo es una
-secuencia finita de instrucciones bien definidas que se pueden
-implementar por computadora, típicamente para resolver una clase de
-problemas o realizar un cálculo.**
+>**En matemáticas y ciencias de la computación, un algoritmo es una
+>secuencia finita de instrucciones bien definidas que se pueden
+>implementar por computadora, típicamente para resolver una clase de
+>problemas o realizar un cálculo.**
 
 ### Elección de la solución correcta
 
