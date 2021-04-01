@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="css/air.css">
-
 # **Programación con B4X**
 
  Version 1.0, marzo 2021
@@ -100,4 +98,6 @@ Finalmente, tras aplicar la solución es necesario probar con varios
 datos, para examinar si conduce a resultados correctos cada vez que se
 realiza sin situaciones problemáticas.
 
+
 ![Dibujo 1. Los pasos](media/tema1%20-%20dibujo1.png)
+<center> Dibujo 1. Los pasos</center>
