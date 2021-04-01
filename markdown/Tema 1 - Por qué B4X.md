@@ -9,7 +9,7 @@
 # Tema 1 - Por qué B4X
 
 
-<h3>:clock3: 1 hora</h3>
+>:clock3: 1 hora
 
 Muchos programadores nuevos se preguntan en qué lenguaje de programación
 invertir su tiempo y esfuerzo. Cada lenguaje de programación tiene
