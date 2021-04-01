@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tema 3 - Mi primer Programa</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><strong>Programando con B4X</strong></p>
+<p>Tema 3 – Mi primer Programa</p>
+<p>Version 1.0, marzo 2021</p>
+<p>Autor original: <a href="https://github.com/pliroforikos">Prokopis Leon</a></p>
+<p>Traducido al español por <a href="https://github.com/Lamashino">José Miguel López</a></p>
+<p><img src="media\media\image1.png" style="width:0.91667in;height:0.32292in" /></p>
+<h1 id="tema-3-mi-primer-programa">Tema 3 – Mi primer Programa</h1>
+<p><img src="media\media\image8.png" style="width:0.82639in;height:0.46111in" /></p>
+<h2 id="section"></h2>
+<h2 id="hola-mundo"><img src="media\media\image10.png" style="width:0.40888in;height:0.35527in" />Hola Mundo</h2>
+<p>Haz un programa que dibuje una línea recta con la ayuda de la tortuga en la pantalla de la computadora.</p>
+<p>Instrucciones recomendadas para el profesor</p>
+<p>El objetivo del ejercicio anterior es familiarizar a los estudiantes en la creación de un proyecto con B4J y tener el primer contacto con un entorno de programación. Las siguientes instrucciones no limitan en modo alguno al profesor a adaptar su curso a las condiciones educativas particulares.<img src="media\media\image11.png" style="width:4.13056in;height:0.67639in" /></p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Función</strong></th>
+<th><strong>Descripción</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Cómo crear tu primer proyecto con B4J</td>
+<td><p><em>Menú Archivo -&gt; Nuevo -&gt; B4Xturtle</em></p>
+<p><em>Carpeta del proyecto</em></p>
+<p><em>Nombre del proyecto</em></p>
+<p>Explique a los estudiantes la importancia de los nombres correctos en cada proyecto que crean y el valor del almacenamiento correcto en carpetas de una manera estructurada</p></td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>Ejecutar un Proyecto</td>
+<td><p><em>Menú Proyecto -&gt; Compilar y Ejecutar</em> </p>
+<p>Explique qué significa compilar y cómo reconocer errores de sintaxis en el registro. No es necesario que proporcione mucha información sobre la compilación. Solo lo básico para ejecutar un proyecto.</p></td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>#Region Project Attributes</td>
+<td>Cambie los valores en <em>MainFormWidth</em> y <em>MainFormHeight</em> para hacer una aplicación de diferente tamaño.</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>Sub Turtle_Start</td>
+<td><p><em>¿Qué significa Sub?</em></p>
+<p>Una pequeña cantidad de código que está realizando una determinada actividad.</p></td>
+</tr>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td>Métodos Turtle</td>
+<td><p>¿Qué es Turtle? </p>
+<p>¿Qué hace .MoveForward?</p>
+<p>¿Cómo podemos encontrar más comandos?</p>
+<p>(Dígales a los estudiantes que escriban “Turtle”. Para ver la lista de métodos.</p></td>
+</tr>
+<tr class="even">
+<td><strong>6</strong></td>
+<td>Errores</td>
+<td>Cómo identificar un error en la pantalla de registro (Log)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ejercicios">Ejercicios </h2>
+<ol type="1">
+<li><p>Usa la tortuga y los métodos <em><strong>MoveForward</strong>, <strong>TurnLeft</strong>, <strong>TurnRight</strong></em> para dibujar un cuadrado del tamaño que quieras.</p></li>
+<li><p>Usando los comandos anteriores y <em><strong>PenUp</strong>, <strong>PenDown</strong></em> y <em><strong>Move</strong></em> dibuja 3 cuadrados como la imagen de abajo.</p></li>
+<li><p>Usando los comandos anteriores, haz el dibujo que quieras. Dale un nombre a tu dibujo y explica cómo lo hiciste.</p></li>
+</ol>
+</body>
+</html>
