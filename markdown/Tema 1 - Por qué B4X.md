@@ -1,15 +1,16 @@
-# **Programación con B4X**
-
- Version 1.0, marzo 2021
- 
- Autor original: [Prokopis Leon](https://github.com/pliroforikos)
- 
- Traducido al español por [José Miguel López](https://github.com/Lamashino)
+# **_Programación con B4X_**
+- - - 
+   Version 1.0, marzo 2021  
+   Autor original: [Prokopis Leon](https://github.com/pliroforikos)  
+   Traducido al español por [José Miguel López](https://github.com/Lamashino)  
+   ![Creative Commons 4.0](media/cc.png)
+- - - 
 
 # Tema 1 - Por qué B4X
 
 
->:clock3: 1 hora
+| :clock3: 1 hora |
+|:----------------|
 
 Muchos programadores nuevos se preguntan en qué lenguaje de programación
 invertir su tiempo y esfuerzo. Cada lenguaje de programación tiene
@@ -49,7 +50,7 @@ entusiasta que con mucho gusto ayuda en cualquier tipo de duda.
 Para mas información, se puede visitar el sitio web:
 [https://www.b4x.com/learn.html](https://www.b4x.com/learn.html)
 
-## Instalación de B4X
+## 1.1. Instalación de B4X
 
 La información más actualizada sobre cómo instalar B4X está siempre
 aquí: <https://www.b4x.com/b4j.html>
