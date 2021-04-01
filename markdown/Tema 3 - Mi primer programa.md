@@ -40,70 +40,14 @@ particulares.
 > ![Tortuga](media/chistera.png)**_Consejo para el profesor_**  
 > Este es el primer tema, así que ¡haz que sea sencillo!
 
-
-+-------------+--------------------------+--------------------------+
-| **Función** | **Descripción**          |                          |
-+=============+==========================+==========================+
-| **1**       | Cómo crear tu primer     | *Menú Archivo -\> Nuevo  |
-|             | proyecto con B4J         | -\> B4Xturtle*           |
-|             |                          |                          |
-|             |                          | *Carpeta del proyecto*   |
-|             |                          |                          |
-|             |                          | *Nombre del proyecto*    |
-|             |                          |                          |
-|             |                          | Explique a los           |
-|             |                          | estudiantes la           |
-|             |                          | importancia de los       |
-|             |                          | nombres correctos en     |
-|             |                          | cada proyecto que crean  |
-|             |                          | y el valor del           |
-|             |                          | almacenamiento correcto  |
-|             |                          | en carpetas de una       |
-|             |                          | manera estructurada      |
-+-------------+--------------------------+--------------------------+
-| **2**       | Ejecutar un Proyecto     | *Menú Proyecto -\>       |
-|             |                          | Compilar y Ejecutar*     |
-|             |                          |                          |
-|             |                          | Explique qué significa   |
-|             |                          | compilar y cómo          |
-|             |                          | reconocer errores de     |
-|             |                          | sintaxis en el registro. |
-|             |                          | No es necesario que      |
-|             |                          | proporcione mucha        |
-|             |                          | información sobre la     |
-|             |                          | compilación. Solo lo     |
-|             |                          | básico para ejecutar un  |
-|             |                          | proyecto.                |
-+-------------+--------------------------+--------------------------+
-| **3**       | \#Region Project         | Cambie los valores en    |
-|             | Attributes               | *MainFormWidth* y        |
-|             |                          | *MainFormHeight* para    |
-|             |                          | hacer una aplicación de  |
-|             |                          | diferente tamaño.        |
-+-------------+--------------------------+--------------------------+
-| **4**       | Sub Turtle_Start         | *¿Qué significa Sub?*    |
-|             |                          |                          |
-|             |                          | Una pequeña cantidad de  |
-|             |                          | código que está          |
-|             |                          | realizando una           |
-|             |                          | determinada actividad.   |
-+-------------+--------------------------+--------------------------+
-| **5**       | Métodos Turtle           | ¿Qué es Turtle?          |
-|             |                          |                          |
-|             |                          | ¿Qué hace .MoveForward?  |
-|             |                          |                          |
-|             |                          | ¿Cómo podemos encontrar  |
-|             |                          | más comandos?            |
-|             |                          |                          |
-|             |                          | (Dígales a los           |
-|             |                          | estudiantes que escriban |
-|             |                          | "Turtle". Para ver la    |
-|             |                          | lista de métodos.        |
-+-------------+--------------------------+--------------------------+
-| **6**       | Errores                  | Cómo identificar un      |
-|             |                          | error en la pantalla de  |
-|             |                          | registro (Log)           |
-+-------------+--------------------------+--------------------------+
+| Función                                  | Descripción                              |
+|------------------------------------------|------------------------------------------|
+| 1. Cómo crear tu primer proyecto con B4J | *Menú Archivo -> Nuevo -> B4Xturtle<br>Carpeta del proyecto*<br>*Nombre del proyecto*<br><br>Explique a los estudiantes la importancia de los nombres correctos en cada proyecto que crean y el valor del almacenamiento correcto en carpetas de una manera estructurada |
+| 2. Ejecutar un Proyecto                  | *Menú Proyecto -\>Compilar y Ejecutar*<br><br> Explique qué significa compilar y cómo reconocer errores de sintaxis en el registro. No es necesario que proporcione mucha información sobre la compilación. Solo lo básico para ejecutar un proyecto.       |
+| 3. #Region Project Attributes            | Cambie los valores en *MainFormWidth* y *MainFormHeight* para hacer una aplicación de diferente tamaño.        |
+| 4. Sub Turtle_Start                      | *¿Qué significa Sub?*<br><br> Una pequeña cantidad de código que está realizando una determinada actividad.   |
+| 5. Métodos Turtle                        | ¿Qué es Turtle?<br> ¿Qué hace .MoveForward?<br>¿Cómo podemos encontrar más comandos? <br> (Dígales a los estudiantes que escriban "Turtle". Para ver la lista de métodos.        |
+| 6. Errores                               | Cómo identificar un error en la pantalla de registro (Log)           |
 
 ## Ejercicios 
 
