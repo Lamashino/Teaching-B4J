@@ -1,14 +1,19 @@
 # **Programación con B4X**
 
  Version 1.0, marzo 2021
- 
+
  Autor original: [Prokopis Leon](https://github.com/pliroforikos)
- 
+
  Traducido al español por [José Miguel López](https://github.com/Lamashino)
 
 # Tema 2 - El significado de Problema
 
 >:clock3: 1 hora
+
+| Lo que los estudiantes aprenderán |
+|----------------------------------------------------|
+| -   Comprender el problema |
+
 
 ## El concepto de problema
 
@@ -36,23 +41,23 @@ Comprender el problema es el primer paso para diseñar y resolver un
 problema. Es una etapa particularmente crítica porque esto también
 afectará el desarrollo de la solución. Incluye los siguientes pasos:
 
-1.  **Descripción del problema**
+1. **Descripción del problema**
 
-> La descripción del problema generalmente la hacemos nosotros mismos o
-> el que lo tiene. En este paso es importante aclarar todos sus puntos
-> \'oscuros\' y no tener dudas sobre su redacción.
+   La descripción del problema generalmente la hacemos nosotros mismos o
+   el que lo tiene. En este paso es importante aclarar todos sus puntos
+   \'oscuros\' y no tener dudas sobre su redacción.
 
-2.  **Encontrar los datos**
+2. **Encontrar los datos**
 
-> Encontrar los datos significa en qué se basan estos elementos para
-> resolver un problema. Por ejemplo, en una ecuación ax + b = 0, los
-> datos son los factores a y b.
+   Encontrar los datos significa en qué se basan estos elementos para
+   resolver un problema. Por ejemplo, en una ecuación ax + b = 0, los
+   datos son los factores a y b.
 
-3.  **Encontrar lo que se pide **
+3. **Encontrar lo que se pide **
 
-> La información que necesitamos encontrar para solucionar el problema.
-> Continuando con el ejemplo anterior, la información es la x de la
-> ecuación ax + b = 0. 
+   La información que necesitamos encontrar para solucionar el problema.
+   Continuando con el ejemplo anterior, la información es la x de la
+   ecuación ax + b = 0. 
 
 ### Buscando una solución o un conjunto de soluciones.
 
