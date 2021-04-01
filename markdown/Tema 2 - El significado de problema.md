@@ -1,23 +1,14 @@
-**Programación con B4X**
+# **Programación con B4X**
 
-Tema 2 -- El significado de Problema
+ Version 1.0, marzo 2021
+ 
+ Autor original: [Prokopis Leon](https://github.com/pliroforikos)
+ 
+ Traducido al español por [José Miguel López](https://github.com/Lamashino)
 
-Version 1.0, marzo 2021
+# Tema 2 - El significado de Problema
 
-Autor original: [Prokopis Leon](https://github.com/pliroforikos)
-
-Traducido al español por [José Miguel
-López](https://github.com/Lamashino)
-
-![](media/image7.png){width="0.9166666666666666in"
-height="0.3229166666666667in"}
-
-# Tema 2 -- El significado de Problema
-
-![](media/image8.png){width="0.8263888888888888in"
-height="0.46111111111111114in"}
-
-## 
+>:clock3: 1 hora
 
 ## El concepto de problema
 
