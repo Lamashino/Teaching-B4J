@@ -25,7 +25,7 @@
 
 
 ## 3.1. Mi primer programa: 'Hola mundo'
->![](media/Tema%203%20-%20Tortuga.png)  
+>![](media/tortugat.png)  
 >Haz un programa que dibuje una línea recta con la ayuda de la tortuga en
 >la pantalla de la computadora.
 
@@ -37,7 +37,7 @@ entorno de programación. Las siguientes instrucciones no limitan en modo
 alguno al profesor a adaptar su curso a las condiciones educativas
 particulares.
 
-> ![Tortuga](media/chistera.png)**_Consejo para el profesor_**  
+> ![Chistera](media/chistera.png)**_CONSEJO PARA EL PROFESOR_**  
 > Este es el primer tema, así que ¡haz que sea sencillo!
 
 | Función                                  | Descripción                              |
