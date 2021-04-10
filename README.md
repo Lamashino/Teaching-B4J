@@ -62,10 +62,10 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 | 11           | Aplicación 1                 | ·  “Una Calculadora simple”                                                                           | 3     |
 |              |                              | ·    Con la ayuda del profesor, los pupilos crearán una Calculadora con 4 operaciones simples.|       |
 | 12           | Bucles                       | ·  ¿Qué son los bucles?                                                                               | 5     |
-|              |                              | ·    Tipos de bucles en B4X                                                                           |       |
-|              |                              | ·    Bucle For – Next                                                                                 |       |
-|              |                              | ·    Bucle For – Each                                                                                 |       |
-|              |                              | ·    Bucle Do While                                                                                   |       |
+|              |                              | ·   Do While                                                                                          |       |
+|              |                              | ·   Do Until                                                                                          |       |
+|              |                              | ·   Bucle For                                                                                         |       |
+|              |                              | ·   Algoritmos con bucles                                                                             |       |
 | 13           | B4XViews                     | ·  ¿Qué es una vista B4XView?                                                                         | 1     |
 |              |                              | ·    Cómo crear vistas B4XViews                                                                       |       |
 |              |                              | ·    Eventos en vistas B4XViews                                                                       |       |
