@@ -31,14 +31,20 @@ __ref.getField(false,"_libro1" /*RemoteObject*/ ).runClassMethod (b4j.example.cl
  BA.debugLineNum = 27;BA.debugLine="libro2.insertarLibro(\"2001: Una odisea del espaci";
 Debug.ShouldStop(67108864);
 __ref.getField(false,"_libro2" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_insertarlibro" /*RemoteObject*/ ,(Object)(BA.ObjectToString("2001: Una odisea del espacio")),(Object)(BA.ObjectToString("Arthur C. Clarke")),(Object)(BA.ObjectToString("1968")),(Object)(RemoteObject.createImmutable("Ace")));
- BA.debugLineNum = 29;BA.debugLine="libro1.logLibro";
+ BA.debugLineNum = 29;BA.debugLine="libro1.mostrarLibro";
 Debug.ShouldStop(268435456);
-__ref.getField(false,"_libro1" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_loglibro" /*RemoteObject*/ );
- BA.debugLineNum = 30;BA.debugLine="libro2.logLibro";
+__ref.getField(false,"_libro1" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_mostrarlibro" /*RemoteObject*/ );
+ BA.debugLineNum = 30;BA.debugLine="libro2.mostrarLibro";
 Debug.ShouldStop(536870912);
-__ref.getField(false,"_libro2" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_loglibro" /*RemoteObject*/ );
- BA.debugLineNum = 33;BA.debugLine="End Sub";
-Debug.ShouldStop(1);
+__ref.getField(false,"_libro2" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_mostrarlibro" /*RemoteObject*/ );
+ BA.debugLineNum = 32;BA.debugLine="libro1.Escritor = \"Wil. Gibson\"";
+Debug.ShouldStop(-2147483648);
+__ref.getField(false,"_libro1" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_setescritor" /*RemoteObject*/ ,BA.ObjectToString("Wil. Gibson"));
+ BA.debugLineNum = 34;BA.debugLine="Log(libro1.Escritor)";
+Debug.ShouldStop(2);
+b4xmainpage.__c.runVoidMethod ("Log",(Object)(__ref.getField(false,"_libro1" /*RemoteObject*/ ).runClassMethod (b4j.example.clslibro.class, "_getescritor" /*RemoteObject*/ )));
+ BA.debugLineNum = 36;BA.debugLine="End Sub";
+Debug.ShouldStop(8);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {

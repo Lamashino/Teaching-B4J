@@ -64,13 +64,19 @@ RDebugUtils.currentLine=589832;
  //BA.debugLineNum = 589832;BA.debugLine="libro2.insertarLibro(\"2001: Una odisea del espaci";
 __ref._libro2 /*b4j.example.clslibro*/ ._insertarlibro /*String*/ (null,"2001: Una odisea del espacio","Arthur C. Clarke","1968","Ace");
 RDebugUtils.currentLine=589834;
- //BA.debugLineNum = 589834;BA.debugLine="libro1.logLibro";
-__ref._libro1 /*b4j.example.clslibro*/ ._loglibro /*String*/ (null);
+ //BA.debugLineNum = 589834;BA.debugLine="libro1.mostrarLibro";
+__ref._libro1 /*b4j.example.clslibro*/ ._mostrarlibro /*String*/ (null);
 RDebugUtils.currentLine=589835;
- //BA.debugLineNum = 589835;BA.debugLine="libro2.logLibro";
-__ref._libro2 /*b4j.example.clslibro*/ ._loglibro /*String*/ (null);
-RDebugUtils.currentLine=589838;
- //BA.debugLineNum = 589838;BA.debugLine="End Sub";
+ //BA.debugLineNum = 589835;BA.debugLine="libro2.mostrarLibro";
+__ref._libro2 /*b4j.example.clslibro*/ ._mostrarlibro /*String*/ (null);
+RDebugUtils.currentLine=589837;
+ //BA.debugLineNum = 589837;BA.debugLine="libro1.Escritor = \"Wil. Gibson\"";
+__ref._libro1 /*b4j.example.clslibro*/ ._setescritor /*String*/ (null,"Wil. Gibson");
+RDebugUtils.currentLine=589839;
+ //BA.debugLineNum = 589839;BA.debugLine="Log(libro1.Escritor)";
+__c.Log(__ref._libro1 /*b4j.example.clslibro*/ ._getescritor /*String*/ (null));
+RDebugUtils.currentLine=589841;
+ //BA.debugLineNum = 589841;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4j.example.b4xmainpage __ref) throws Exception{

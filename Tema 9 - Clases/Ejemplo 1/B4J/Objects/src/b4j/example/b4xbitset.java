@@ -39,17 +39,17 @@ public b4j.example.b4xcollections _b4xcollections = null;
 public String  _class_globals(b4j.example.b4xbitset __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xbitset";
-RDebugUtils.currentLine=1572864;
- //BA.debugLineNum = 1572864;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=1572868;
- //BA.debugLineNum = 1572868;BA.debugLine="Private data() As Int";
+RDebugUtils.currentLine=1900544;
+ //BA.debugLineNum = 1900544;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=1900548;
+ //BA.debugLineNum = 1900548;BA.debugLine="Private data() As Int";
 _data = new int[(int) (0)];
 ;
-RDebugUtils.currentLine=1572870;
- //BA.debugLineNum = 1572870;BA.debugLine="Private mSize As Int";
+RDebugUtils.currentLine=1900550;
+ //BA.debugLineNum = 1900550;BA.debugLine="Private mSize As Int";
 _msize = 0;
-RDebugUtils.currentLine=1572871;
- //BA.debugLineNum = 1572871;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1900551;
+ //BA.debugLineNum = 1900551;BA.debugLine="End Sub";
 return "";
 }
 public String  _clear(b4j.example.b4xbitset __ref) throws Exception{
@@ -57,14 +57,14 @@ __ref = this;
 RDebugUtils.currentModule="b4xbitset";
 if (Debug.shouldDelegate(ba, "clear", true))
 	 {return ((String) Debug.delegate(ba, "clear", null));}
-RDebugUtils.currentLine=1900544;
- //BA.debugLineNum = 1900544;BA.debugLine="Public Sub Clear";
-RDebugUtils.currentLine=1900548;
- //BA.debugLineNum = 1900548;BA.debugLine="Dim data(Bit.ShiftRight(mSize, 5) + 1) As Int";
+RDebugUtils.currentLine=2228224;
+ //BA.debugLineNum = 2228224;BA.debugLine="Public Sub Clear";
+RDebugUtils.currentLine=2228228;
+ //BA.debugLineNum = 2228228;BA.debugLine="Dim data(Bit.ShiftRight(mSize, 5) + 1) As Int";
 _data = new int[(int) (__c.Bit.ShiftRight(__ref._msize /*int*/ ,(int) (5))+1)];
 ;
-RDebugUtils.currentLine=1900550;
- //BA.debugLineNum = 1900550;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2228230;
+ //BA.debugLineNum = 2228230;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _get(b4j.example.b4xbitset __ref,int _index) throws Exception{
@@ -75,22 +75,22 @@ if (Debug.shouldDelegate(ba, "get", true))
 int _dindex = 0;
 int _offset = 0;
 int _blockvalue = 0;
-RDebugUtils.currentLine=1769472;
- //BA.debugLineNum = 1769472;BA.debugLine="Public Sub Get(Index As Int) As Boolean";
-RDebugUtils.currentLine=1769473;
- //BA.debugLineNum = 1769473;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
+RDebugUtils.currentLine=2097152;
+ //BA.debugLineNum = 2097152;BA.debugLine="Public Sub Get(Index As Int) As Boolean";
+RDebugUtils.currentLine=2097153;
+ //BA.debugLineNum = 2097153;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
 _dindex = __c.Bit.ShiftRight(_index,(int) (5));
-RDebugUtils.currentLine=1769474;
- //BA.debugLineNum = 1769474;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
+RDebugUtils.currentLine=2097154;
+ //BA.debugLineNum = 2097154;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
 _offset = __c.Bit.And((int) (0x0000001f),_index);
-RDebugUtils.currentLine=1769478;
- //BA.debugLineNum = 1769478;BA.debugLine="Dim BlockValue As Int = data(dindex)";
+RDebugUtils.currentLine=2097158;
+ //BA.debugLineNum = 2097158;BA.debugLine="Dim BlockValue As Int = data(dindex)";
 _blockvalue = __ref._data /*int[]*/ [_dindex];
-RDebugUtils.currentLine=1769480;
- //BA.debugLineNum = 1769480;BA.debugLine="Return Bit.And(BlockValue, Bit.ShiftLeft(1, offse";
+RDebugUtils.currentLine=2097160;
+ //BA.debugLineNum = 2097160;BA.debugLine="Return Bit.And(BlockValue, Bit.ShiftLeft(1, offse";
 if (true) return __c.Bit.And(_blockvalue,__c.Bit.ShiftLeft((int) (1),_offset))!=0;
-RDebugUtils.currentLine=1769481;
- //BA.debugLineNum = 1769481;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2097161;
+ //BA.debugLineNum = 2097161;BA.debugLine="End Sub";
 return false;
 }
 public int  _getsize(b4j.example.b4xbitset __ref) throws Exception{
@@ -98,13 +98,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xbitset";
 if (Debug.shouldDelegate(ba, "getsize", true))
 	 {return ((Integer) Debug.delegate(ba, "getsize", null));}
-RDebugUtils.currentLine=1835008;
- //BA.debugLineNum = 1835008;BA.debugLine="Public Sub getSize As Int";
-RDebugUtils.currentLine=1835009;
- //BA.debugLineNum = 1835009;BA.debugLine="Return mSize";
+RDebugUtils.currentLine=2162688;
+ //BA.debugLineNum = 2162688;BA.debugLine="Public Sub getSize As Int";
+RDebugUtils.currentLine=2162689;
+ //BA.debugLineNum = 2162689;BA.debugLine="Return mSize";
 if (true) return __ref._msize /*int*/ ;
-RDebugUtils.currentLine=1835010;
- //BA.debugLineNum = 1835010;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2162690;
+ //BA.debugLineNum = 2162690;BA.debugLine="End Sub";
 return 0;
 }
 public String  _initialize(b4j.example.b4xbitset __ref,anywheresoftware.b4a.BA _ba,int _size) throws Exception{
@@ -113,16 +113,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xbitset";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_size}));}
-RDebugUtils.currentLine=1638400;
- //BA.debugLineNum = 1638400;BA.debugLine="Public Sub Initialize (Size As Int)";
-RDebugUtils.currentLine=1638401;
- //BA.debugLineNum = 1638401;BA.debugLine="mSize = Size";
+RDebugUtils.currentLine=1966080;
+ //BA.debugLineNum = 1966080;BA.debugLine="Public Sub Initialize (Size As Int)";
+RDebugUtils.currentLine=1966081;
+ //BA.debugLineNum = 1966081;BA.debugLine="mSize = Size";
 __ref._msize /*int*/  = _size;
-RDebugUtils.currentLine=1638402;
- //BA.debugLineNum = 1638402;BA.debugLine="Clear";
+RDebugUtils.currentLine=1966082;
+ //BA.debugLineNum = 1966082;BA.debugLine="Clear";
 __ref._clear /*String*/ (null);
-RDebugUtils.currentLine=1638403;
- //BA.debugLineNum = 1638403;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1966083;
+ //BA.debugLineNum = 1966083;BA.debugLine="End Sub";
 return "";
 }
 public String  _set(b4j.example.b4xbitset __ref,int _index,boolean _value) throws Exception{
@@ -134,36 +134,36 @@ int _dindex = 0;
 int _offset = 0;
 int _blockvalue = 0;
 int _newblockvalue = 0;
-RDebugUtils.currentLine=1703936;
- //BA.debugLineNum = 1703936;BA.debugLine="Public Sub Set(Index As Int, Value As Boolean)";
-RDebugUtils.currentLine=1703937;
- //BA.debugLineNum = 1703937;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
+RDebugUtils.currentLine=2031616;
+ //BA.debugLineNum = 2031616;BA.debugLine="Public Sub Set(Index As Int, Value As Boolean)";
+RDebugUtils.currentLine=2031617;
+ //BA.debugLineNum = 2031617;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
 _dindex = __c.Bit.ShiftRight(_index,(int) (5));
-RDebugUtils.currentLine=1703938;
- //BA.debugLineNum = 1703938;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
+RDebugUtils.currentLine=2031618;
+ //BA.debugLineNum = 2031618;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
 _offset = __c.Bit.And((int) (0x0000001f),_index);
-RDebugUtils.currentLine=1703942;
- //BA.debugLineNum = 1703942;BA.debugLine="Dim BlockValue As Int = data(dindex)";
+RDebugUtils.currentLine=2031622;
+ //BA.debugLineNum = 2031622;BA.debugLine="Dim BlockValue As Int = data(dindex)";
 _blockvalue = __ref._data /*int[]*/ [_dindex];
-RDebugUtils.currentLine=1703944;
- //BA.debugLineNum = 1703944;BA.debugLine="Dim NewBlockValue As Int";
+RDebugUtils.currentLine=2031624;
+ //BA.debugLineNum = 2031624;BA.debugLine="Dim NewBlockValue As Int";
 _newblockvalue = 0;
-RDebugUtils.currentLine=1703945;
- //BA.debugLineNum = 1703945;BA.debugLine="If Value Then";
+RDebugUtils.currentLine=2031625;
+ //BA.debugLineNum = 2031625;BA.debugLine="If Value Then";
 if (_value) { 
-RDebugUtils.currentLine=1703946;
- //BA.debugLineNum = 1703946;BA.debugLine="NewBlockValue = Bit.Or(BlockValue, Bit.ShiftLeft";
+RDebugUtils.currentLine=2031626;
+ //BA.debugLineNum = 2031626;BA.debugLine="NewBlockValue = Bit.Or(BlockValue, Bit.ShiftLeft";
 _newblockvalue = __c.Bit.Or(_blockvalue,__c.Bit.ShiftLeft((int) (1),_offset));
  }else {
-RDebugUtils.currentLine=1703948;
- //BA.debugLineNum = 1703948;BA.debugLine="NewBlockValue = Bit.And(BlockValue, Bit.Not(Bit.";
+RDebugUtils.currentLine=2031628;
+ //BA.debugLineNum = 2031628;BA.debugLine="NewBlockValue = Bit.And(BlockValue, Bit.Not(Bit.";
 _newblockvalue = __c.Bit.And(_blockvalue,__c.Bit.Not(__c.Bit.ShiftLeft((int) (1),_offset)));
  };
-RDebugUtils.currentLine=1703953;
- //BA.debugLineNum = 1703953;BA.debugLine="data(dindex) = NewBlockValue";
+RDebugUtils.currentLine=2031633;
+ //BA.debugLineNum = 2031633;BA.debugLine="data(dindex) = NewBlockValue";
 __ref._data /*int[]*/ [_dindex] = _newblockvalue;
-RDebugUtils.currentLine=1703955;
- //BA.debugLineNum = 1703955;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2031635;
+ //BA.debugLineNum = 2031635;BA.debugLine="End Sub";
 return "";
 }
 }

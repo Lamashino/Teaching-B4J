@@ -34,5 +34,12 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	
 	libro1.mostrarLibro
 	libro2.mostrarLibro
+	
+	libro1.Escritor = "Wil. Gibson"
+	
+	Log(libro1.Escritor)
+	
+	
+	Log(libro1.
 End Sub
 
