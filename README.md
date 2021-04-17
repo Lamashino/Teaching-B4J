@@ -70,20 +70,19 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·  Biblioteca XUI                                                                                     |       |
 |              |                              | ·  Dialogs - Diálogos                                                                                 |       |
 |              |                              | ·  Plantillas                                                                                         |       |
-| 14           | XUI Views                    | ·  Crear diálogos                                                                                     | 2     |
-| 15           | Matrices - Arrays            | ·  Matrices unidimensionales (o Vectores)                                                             | 4     |
+| 14           | Matrices - Arrays            | ·  Matrices unidimensionales (o Vectores)                                                             | 4     |
 |              |                              | ·    Operacioes básicas con matrices                                                                  |       |
 |              |                              | ·    Búsqueda lineal                                                                                  |       |
 |              |                              | ·    Búsqueda binaria                                                                                 |       |
 |              |                              | ·    Elemento MÁX – MÍN                                                                               |       |
 |              |                              | ·    Ordenación con Bubble Sort                                                                       |       |
 |              |                              | ·    Ordenación con Selection Sort                                                                    |       |
-| 16           | Listas                       | ·  ¿Qué es una lista?                                                                                 | 2     |
+| 15           | Listas                       | ·  ¿Qué es una lista?                                                                                 | 2     |
 |              |                              | ·    Operaciones básicas con listas                                                                   |       |
-| 17           | Mapas                        | ·  ¿Qué es un mapa?                                                                                   | 2     |
+| 16           | Mapas                        | ·  ¿Qué es un mapa?                                                                                   | 2     |
 |              |                              | ·    Operaciones básicas con mapas                                                                    |       |
-| 18           | Ficheros                     | ·  Localización de Ficheros en B4J                                                                    | 2     |
+| 17           | Ficheros                     | ·  Localización de Ficheros en B4J                                                                    | 2     |
 |              |                              | ·    Métodos con Ficheros                                                                             |       |
-| 19           | Aplicación 2                 | En esta aplicación los pupilos probarán sus conocimientos creando una aplicación basada en lecciones anteriores. | 10    |
-| 20           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
+| 18           | Aplicación 2                 | En esta aplicación los pupilos probarán sus conocimientos creando una aplicación basada en lecciones anteriores. | 10    |
+| 19           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
 | Horas totales|                              |                                                                                                       | 57    |
