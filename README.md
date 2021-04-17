@@ -66,9 +66,10 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·   Do Until                                                                                          |       |
 |              |                              | ·   Bucle For                                                                                         |       |
 |              |                              | ·   Algoritmos con bucles                                                                             |       |
-| 13           | B4XViews                     | ·  ¿Qué es una vista B4XView?                                                                         | 1     |
-|              |                              | ·    Cómo crear vistas B4XViews                                                                       |       |
-|              |                              | ·    Eventos en vistas B4XViews                                                                       |       |
+| 13           | XUI Views                    | ·  Qué es una biblioteca                                                                              | 3     |
+|              |                              | ·  Biblioteca XUI                                                                                     |       |
+|              |                              | ·  Dialogs - Diálogos                                                                                 |       |
+|              |                              | ·  Plantillas                                                                                         |       |
 | 14           | XUI Views                    | ·  Crear diálogos                                                                                     | 2     |
 | 15           | Matrices - Arrays            | ·  Matrices unidimensionales (o Vectores)                                                             | 4     |
 |              |                              | ·    Operacioes básicas con matrices                                                                  |       |
