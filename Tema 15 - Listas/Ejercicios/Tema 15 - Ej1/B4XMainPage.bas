@@ -35,15 +35,15 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	dialog.Initialize(Root)
 	Countries.Initialize
 	
-	Countries.Add(Array As String("CUBA", "HAVANA"))
-	Countries.Add(Array As String("CYPRUS", "NICOSIA"))
-	Countries.Add(Array As String("CZECHIA", "PRAGUE"))
-	Countries.Add(Array As String("EGYPT", "CAIRO"))
-	Countries.Add(Array As String("KENYA", "NAIROBI"))
-	Countries.Add(Array As String("MEXICO", "MEXICO CITY"))
-	Countries.Add(Array As String("PERU", "LIMA"))
-	Countries.Add(Array As String("VIETNAM", "HANOI"))
-	Countries.Add(Array As String("PORTUGAL", "LISBON"))
+	Countries.Add(Array As String("Cuba", "La Habana"))
+	Countries.Add(Array As String("Chipre", "Nicosia"))
+	Countries.Add(Array As String("Chequia", "Praga"))
+	Countries.Add(Array As String("Egipto", "El Cairo"))
+	Countries.Add(Array As String("Kenia", "Nairobi"))
+	Countries.Add(Array As String("México", "México DF"))
+	Countries.Add(Array As String("Perú", "Lima"))
+	Countries.Add(Array As String("Vietnam", "Hanoi"))
+	Countries.Add(Array As String("Portugal", "Lisboa"))
 	
 	showList(Countries)
 	
@@ -57,7 +57,7 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Next
 End Sub
 
-'Show list 
+'mostrar lista
 Private Sub showList(A As List)
 	For i = 0 To A.Size - 1
 		Private cntr() As String
@@ -67,7 +67,7 @@ Private Sub showList(A As List)
 End Sub
 	
 
-'Find capital city
+'Buscar la capital
 Private Sub Button1_Click
 	For i = 0 To Countries.Size - 1
 		Private cntr() As String
@@ -86,7 +86,7 @@ Private Sub btnNewCountry_Click
 	p.SetLayoutAnimated(0, 0, 0, 300dip, 200dip)
 	
 	p.LoadLayout("frmNewCountry")
-	dialog.PutAtTop = True 'put the dialog at the top of the screen
+	dialog.PutAtTop = True 'Poner el diálogo en primer plano
 	
 	Wait For (dialog.ShowCustom(p, "OK", "", "CANCEL")) Complete (Result As Int)
 	If Result = xui.DialogResponse_Positive Then

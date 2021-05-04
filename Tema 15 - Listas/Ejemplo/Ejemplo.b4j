@@ -51,42 +51,43 @@ End Sub
 'B4XTurtle examples: https://www.b4x.com/android/forum/threads/examples-for-teachers-and-parents.116979
 Sub Turtle_Start
 
-	Private islands As List
-	islands.Initialize
+	Private islas As List
+	islas.Initialize
 	
-	islands.AddAll(Array As String("Pireus", "Paros", "Thira", "Crete"))
+	islas.AddAll(Array As String("Pireus", "Paros", "Thira", "Crete"))
 	
-	For i = 0 To islands .Size-1
-		Log(islands.Get(i))
+	For i = 0 To islas .Size-1
+		Log(islas.Get(i))
 	Next
 	
-	'Insert item 
-	islands.InsertAt(2, "Naxos")
+	'Insertar ítem 
+	islas.InsertAt(2, "Naxos")
 	
-	For i = 0 To islands .Size-1
-		Log(islands.Get(i))
+	For i = 0 To islas .Size-1
+		Log(islas.Get(i))
 	Next
 
-	'Create a list of arrays 
-	Private StudentsGrades As List
-	StudentsGrades.Initialize
+	'Crear una lista de arrays
+	Private NotasEstudiantes As List
+	NotasEstudiantes.Initialize
 
-	For j = 0 To 4
-		Private Grades(5) As Int
-		For i = 0 To 4
-			Grades(i) = Rnd(1, 100)	'Create 5 random Grades For student
+	For j = 0  To  4
+		Private Notas(5)  As Int
+		For i = 0  To  4
+			Notas(i) = Rnd(1, 100) ' Crear 5 Notas aleatorias por estudiante
 		Next
-		StudentsGrades.Add(Grades)
+		NotasEstudiantes.Add(Notas)
 	Next
 	
-	'Show Students Grades
-	For j = 0 To StudentsGrades.Size - 1
-		Log("Student: " & j)
-		Private Grades(5) As Int = StudentsGrades.Get(j)
-		For I = 0 To 4
-			Log(Grades(i))
-		Next		
+	' Mostrar las notas de los estudiantes
+	For j = 0  To  NotasEstudiantes.Size - 1
+		Log("Estudiante: " & j)
+		Private notasEst(5)  As Int  = NotasEstudiantes.Get(j)
+		For I  = 0  To  4
+			Log(notasEst(i))
+		Next
 	Next
+
 	
 End Sub
 
