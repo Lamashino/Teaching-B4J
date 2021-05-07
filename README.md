@@ -59,8 +59,8 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 | 10           | B4XPages                     | ·  ¿Qué es una página B4XPage?                                                                        | 3     |
 |              |                              | ·    ¿Cómo crear y borrar una página B4XPage?                                                         |       |
 |              |                              | ·    Paso de Valores dentro de Páginas                                                                |       |
-| 11           | Aplicación 1                 | ·  “Una Calculadora simple”                                                                           | 3     |
-|              |                              | ·    Con la ayuda del profesor, los pupilos crearán una Calculadora con 4 operaciones simples.|       |
+| 11           | Aplicación 1                 | ·  “Una tiende de móviles”                                                                            | 5     |
+|              |                              | ·    Usar los conocimientos previos para crear su primera aplicación                                  |       |
 | 12           | Bucles                       | ·  ¿Qué son los bucles?                                                                               | 5     |
 |              |                              | ·   Do While                                                                                          |       |
 |              |                              | ·   Do Until                                                                                          |       |
