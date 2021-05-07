@@ -71,7 +71,7 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·  Dialogs - Diálogos                                                                                 |       |
 |              |                              | ·  Plantillas                                                                                         |       |
 | 14           | Matrices - Arrays            | ·  Matrices unidimensionales (o Vectores)                                                             | 4     |
-|              |                              | ·    Operacioes básicas con matrices                                                                  |       |
+|              |                              | ·    Operaciones básicas con matrices                                                                  |       |
 |              |                              | ·    Elemento Máximo – Mínimo                                                                         |       |
 |              |                              | ·    Búsqueda lineal                                                                                  |       |
 |              |                              | ·    Búsqueda binaria                                                                                 |       |
