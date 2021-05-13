@@ -86,9 +86,9 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·  Ubicación de Ficheros en B4J                                                                       |       |
 |              |                              | ·  Métodos con Ficheros                                                                               |       |
 | 18           | Tipos de datos complejos     | · Declaración de Tipo                                                                                 | 4     |
-|              |                              | · Arrays de Tipo                                                                                      |       |
-|              |                              | · Listas de Tipo                                                                                      |       |
-|              |                              | · Mapas de Tipo                                                                                       |       |
+|              |                              | · Arrays de un Tipo                                                                                   |       |
+|              |                              | · Listas de un Tipo                                                                                   |       |
+|              |                              | · Mapas de un Tipo                                                                                    |       |
 |              |                              | · Ficheros KVS                                                                                        |       |
 |              |                              | · CustomListView                                                                                      |       |
 |              |                              | · B4XComboBox                                                                                         |       |
