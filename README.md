@@ -84,7 +84,13 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·    Sentencia "for each"                                                                             |       |
 | 17           | Ficheros                     | ·  ¿Qué es un fichero?                                                                                | 2     |
 |              |                              | ·  Ubicación de Ficheros en B4J                                                                       |       |
-|              |                              | ·  Métodos con Ficheros                                                                                |       |
-| 18           | Aplicación 2                 | En esta aplicación los pupilos probarán sus conocimientos creando una aplicación basada en lecciones anteriores. | 10    |
+|              |                              | ·  Métodos con Ficheros                                                                               |       |
+| 18           | Tipos de datos complejos     | · Declaración de Tipo                                                                                 | 4     |
+|              |                              | · Arrays de Tipo                                                                                      |       |
+|              |                              | · Listas de Tipo                                                                                      |       |
+|              |                              | · Mapas de Tipo                                                                                       |       |
+|              |                              | · Ficheros KVS                                                                                        |       |
+|              |                              | · CustomListView                                                                                      |       |
+|              |                              | · B4XComboBox                                                                                         |       |
 | 19           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
 | Horas totales|                              |                                                                                                       | 57    |
