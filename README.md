@@ -92,5 +92,6 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | · Ficheros KVS                                                                                        |       |
 |              |                              | · CustomListView                                                                                      |       |
 |              |                              | · B4XComboBox                                                                                         |       |
-| 19           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
+| 19           | Proyecto Final               | • Usar los conocimientos adquiridos para crear un proyecto final                                      | 10    |
+| 20           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
 | Horas totales|                              |                                                                                                       | 57    |
