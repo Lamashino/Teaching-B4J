@@ -7,12 +7,12 @@ Version=8.9
 Sub Class_Globals
 	Private Root As B4XView 'ignore
 	Private xui As XUI 'ignore
-	Private btnBorrow As Button
-	Private cmbStudent As B4XComboBox
-	Private clvBooks As CustomListView
-	Private selectedBook As Int = -1
-	Private selectedStudentID As String =  "" 
-	Private selectedBookID As String  =  ""  
+	Private btnPrestar As Button
+	Private cmbEstudiante As B4XComboBox
+	Private clvLibros As CustomListView
+	Private libroElegido As Int = -1
+	Private idEstudianteElegido As String =  "" 
+	Private idLibroElegido As String  =  ""  
 End Sub
 
 'You can add more parameters here.
@@ -25,113 +25,112 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	'load the layout to Root
 	Root.LoadLayout("frmBorrow") 
-	cmbStudent.SetItems(showcmbStudent)
-	loadBookList
+	cmbEstudiante.SetItems(mostrarcmbEstudiante)
+	cargarListaLibros
 End Sub
 
-'Load clv list with Books formated in a way that will shown arranged
-'Use monospaceed fonts and left allign in clv.
-Private Sub loadBookList
-	For Each tpBkt As Book In B4XPages.MainPage.mapBooks.Values
+' Carga la lista CLV con los libros formeateados de tal modo que se mostrarán
+' alineados a la izquierda con una fuente de tamaño fijo
+Private Sub cargarListaLibros
+	For Each tpLibro As Libro In B4XPages.MainPage.mapaLibros.Values
 		Private s1, s2, s3, s4, s5, s6, str As String
-		s1 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.ID, 1)
-		s2 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Title, 2)
-		s3 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Writer, 3)
-		s4 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Year, 4)
-		s5 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Publisher, 5)
-		s6 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Shelv, 6)
+		s1 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.ID, 1)
+		s2 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Título, 2)
+		s3 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Escritor, 3)
+		s4 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Ano, 4)
+		s5 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Editorial, 5)
+		s6 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Estante, 6)
 		
 		str = $"${s1}${s2}${s3}${s4}${s5}${s6}"$
-		clvBooks.AddTextItem(str, tpBkt.ID)
+		clvLibros.AddTextItem(str, tpLibro.ID)
 	Next
 End Sub
 
 'Returns a list with alla studentswith idm First LastName and Class
-Private Sub showcmbStudent As List 
-	Private newList As List 
-	newList.Initialize
-	For Each key As String In B4XPages.MainPage.mapStudents.Keys
-		Dim tp As Student
-		tp = B4XPages.MainPage.mapStudents.Get(key)
-		newList.Add($"${key} ${tp.FirstName} ${tp.LastName} ${tp.Cls}"$)
-		Log($"${key} ${tp.FirstName} ${tp.LastName} ${tp.Cls}"$ )
+Private Sub mostrarcmbEstudiante As List
+	Private nuevaLista As List 
+	nuevaLista.Initialize
+	For Each clave As String In B4XPages.MainPage.mapaEstudiantes.Keys
+		Dim tp As Estudiante
+		tp = B4XPages.MainPage.mapaEstudiantes.Get(clave)
+		nuevaLista.Add($"${clave} ${tp.Nombre} ${tp.Apellidos} ${tp.Clase}"$)
+		Log($"${clave} ${tp.Nombre} ${tp.Apellidos} ${tp.Clase}"$ )
 	Next
-	Return newList
+	Return nuevaLista
 End Sub
 
-'When combo box changed set Publc selectedStudentID into selected Student ID
-Private Sub cmbStudent_SelectedIndexChanged (Index As Int)
-	selectedStudentID = ""
-	Private str As String = cmbStudent.GetItem(Index) 
+' Cuando se cambia el combobox, fijamos el valor de idEstudianteElegido al ID del estudiante
+Private Sub cmbEstudiante_SelectedIndexChanged (Index As Int)
+	idEstudianteElegido = ""
+	Private str As String = cmbEstudiante.GetItem(Index)
 	Private i As Int = 0 
 	Do While str.CharAt(i) <> " " 	
-		selectedStudentID = selectedStudentID & str.CharAt(i)
+		idEstudianteElegido = idEstudianteElegido & str.CharAt(i)
 		i = i + 1
 	Loop
-	Log(selectedStudentID)
+	Log(idEstudianteElegido)
 End Sub
 
-
-'When a clicked a book change the color of the line to blue or white
-'in order to selecte and deselect the line. Also set Public selectedBook 
-'value to the clv index value and selectedBookID into selected Book ID
-Private Sub clvBooks_ItemClick (Index As Int, Value As Object)
-	If selectedBook = -1 Then
-		Dim p As B4XView = clvBooks.GetPanel(Index)
+' Cuando se pulsa en un libro se cambia el color de la línea a blanco o azul
+' para marcar o desmarcar la línea. También se establece el valor de libroElegido
+' al valor que hay en el índice de la lista CLV y el idLibroElegido
+Private Sub clvLibros_ItemClick (Índice As Int, Valor As Object)
+	If libroElegido = -1 Then
+		Dim p As B4XView = clvLibros.GetPanel(Índice)
 		p.GetView(0).Color = xui.Color_Blue
-		selectedBook = Index
-		selectedBookID = clvBooks.GetValue(selectedBook)
+		libroElegido = Índice
+		idLibroElegido = clvLibros.GetValue(libroElegido)
 	Else
-		Dim p As B4XView = clvBooks.GetPanel(selectedBook)
+		Dim p As B4XView = clvLibros.GetPanel(libroElegido)
 		p.GetView(0).Color = xui.Color_White
-		If selectedBook = Index  Then
-			selectedBook = -1
-			selectedBookID = "" 
+		If libroElegido = Índice  Then
+			libroElegido = -1
+			idLibroElegido = ""
 		Else
-			Dim p As B4XView = clvBooks.GetPanel(Index)
+			Dim p As B4XView = clvLibros.GetPanel(Índice)
 			p.GetView(0).Color = xui.Color_Blue
-			selectedBook = Index
-			selectedBookID = clvBooks.GetValue(selectedBook)
+			libroElegido = Índice
+			idLibroElegido = clvLibros.GetValue(libroElegido)
 		End If
 	End If
 
-	Log(selectedBook)
+	Log(libroElegido)
 End Sub
 
 
-Private Sub btnBorrow_Click
-	If selectedBookID <> "" And selectedStudentID <> "" Then 
-		borrowBook
+Private Sub btnPrestar_Click
+	If idLibroElegido <> "" And idEstudianteElegido <> "" Then
+		prestarLibro
 	End If 
 End Sub
 
 
-'Create a kvs file for student to store borrowed books ids
-Public Sub borrowBook()
-	'if student file is not exists then create it and create a map to store book ID and Date
-	Private mapSt As Map
-	mapSt.Initialize
+' Crear un fichero KVS para el estudiante para guardar los IDs de los libros prestados
+Public Sub prestarLibro()
+	'si el fichero del Estudiante no existe, lo creamos y creamos un mapa para guardar el id del libro y la fecha del préstamo
+	Private mapaEst As Map
+	mapaEst.Initialize
 	
-	Private stdFileName As String = selectedStudentID & ".dat"
-	Log("File name: " & stdFileName) 
-	Private StudentFIle As KeyValueStore
+	Private nombreFichEst As String = idEstudianteElegido & ".dat"
+	Log("Nombre del fichero: " & nombreFichEst)
+	Private fichEstudiante As KeyValueStore
 
-	If File.Exists(File.DirTemp, stdFileName) Then
-		StudentFIle.Initialize(File.DirTemp, stdFileName)
-		'If file exists then get all values into mapSt
-		Wait For (StudentFIle.GetMapAsync(StudentFIle.ListKeys)) Complete (mapSt As Map)
+	If File.Exists(File.DirTemp, nombreFichEst) Then
+		fichEstudiante.Initialize(File.DirTemp, nombreFichEst)
+		'Si el fichero existe, metemos todos los datos en mapaEst
+		Wait For (fichEstudiante.GetMapAsync(fichEstudiante.ListKeys)) Complete (mapaEst As Map)
 	Else
-		StudentFIle.Initialize(File.DirTemp, stdFileName)
+		fichEstudiante.Initialize(File.DirTemp, nombreFichEst)
 	End If
 	
-	'Add new value to map
-	mapSt.Put(selectedBookID, DateTime.Date(DateTime.Now))
-	For Each key As String In mapSt.Keys
-		Log (key & " " & mapSt.Get(key))
+	'Añadir un nuevo valor al mapa
+	mapaEst.Put(idLibroElegido, DateTime.Date(DateTime.Now))
+	For Each key As String In mapaEst.Keys
+		Log (key & " " & mapaEst.Get(key))
 	Next
-	'Store map to student File
-	Wait For (StudentFIle.PutMapAsync(mapSt)) Complete (Succes As Boolean)
-	StudentFIle.Close
+	'Guardar el mapa en el fichero de Estudiantes
+	Wait For (fichEstudiante.PutMapAsync(mapaEst)) Complete (Exito As Boolean)
+	fichEstudiante.Close
 End Sub
 
 

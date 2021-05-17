@@ -8,14 +8,12 @@ Sub Class_Globals
 	Private Root As B4XView 'ignore
 	Private xui As XUI 'ignore
 	
-	Private btnReturn As Button
-	Private cmbBook As B4XComboBox
-	Private cmbStudent As B4XComboBox
-	Private lblBook As Label
-	Private clvBooks As CustomListView
-	Private selectedBook As Int = -1
-	Private selectedStudentID As String =  ""
-	Private selectedBookID As String  =  ""
+	Private btnDevolver As Button
+	Private cmbEstudiante As B4XComboBox
+	Private clvLibros As CustomListView
+	Private libroElegido As Int = -1
+	Private idEstudianteElegido As String =  ""
+	Private idLibroElegido As String  =  ""
 End Sub
 
 'You can add more parameters here.
@@ -28,118 +26,118 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	'load the layout to Root
 	Root.LoadLayout("frmReturn")
-	cmbStudent.SetItems(showcmbStudent)
+	cmbEstudiante.SetItems(mostrarcmbEstudiante)
 End Sub
 
-'Returns a list with alla studentswith idm First LastName and Class
-Private Sub showcmbStudent As List
-	Private newList As List
-	newList.Initialize
+' Devuelve una lista con todos los estudiantes según su id, nombre, apellidos y clase
+Private Sub mostrarcmbEstudiante As List
+	Private nuevaLista As List
+	nuevaLista.Initialize
 
-	For Each key As String In B4XPages.MainPage.mapStudents.Keys
-		Dim tp As Student
-		tp = B4XPages.MainPage.mapStudents.Get(key)
+	For Each clave As String In B4XPages.MainPage.mapaEstudiantes.Keys
+		Dim tp As Estudiante
+		tp = B4XPages.MainPage.mapaEstudiantes.Get(clave)
 		
-		newList.Add($"${key} ${tp.FirstName} ${tp.LastName} ${tp.Cls}"$)
-		Log($"${key} ${tp.FirstName} ${tp.LastName} ${tp.Cls}"$ )
+		nuevaLista.Add($"${clave} ${tp.Nombre} ${tp.Apellidos} ${tp.Clase}"$)
+		Log($"${clave} ${tp.Nombre} ${tp.Apellidos} ${tp.Clase}"$ )
 	Next
-	Return newList
+	Return nuevaLista
 End Sub
 
-'When combo box changed set Publc selectedStudentID into selected Student ID
-Private Sub cmbStudent_SelectedIndexChanged (Index As Int)
-	selectedStudentID = ""
-	Private str As String = cmbStudent.GetItem(Index)
+' Cuando cambiar el combobox, fijamos el valor de idEstudianteElegido al id del estudiante
+Private Sub cmbEstudiante_SelectedIndexChanged (Índice As Int)
+	idEstudianteElegido = ""
+	Private str As String = cmbEstudiante.GetItem(Índice)
 	Private i As Int = 0
 	Do While str.CharAt(i) <> " "
-		selectedStudentID = selectedStudentID & str.CharAt(i)
+		idEstudianteElegido = idEstudianteElegido & str.CharAt(i)
 		i = i + 1
 	Loop
-	Log(selectedStudentID)
-	loadBookList
+	Log(idEstudianteElegido)
+	cargarListaLibros
 End Sub
 
 
-Private Sub loadBookList
+Private Sub cargarListaLibros
 	Private studentFile As KeyValueStore
 	Private stMAp As Map
 	stMAp.Initialize
-	Log("check " & selectedStudentID & ".dat " & "existence") 
-	If File.Exists(File.DirTemp, selectedStudentID & ".dat") Then 
-		studentFile.Initialize(File.DirTemp, selectedStudentID & ".dat")
+	Log("comprueba la existencia de " & idEstudianteElegido & ".dat ")
+	If File.Exists(File.DirTemp, idEstudianteElegido & ".dat") Then
+		studentFile.Initialize(File.DirTemp, idEstudianteElegido & ".dat")
 		Wait For (studentFile.GetMapAsync(studentFile.ListKeys)) Complete (stMAp As Map)
-		Log("Student file exists") 
-		For Each tpBkt As Book In B4XPages.MainPage.mapBooks.Values
-			If stMAp.ContainsKey(tpBkt.ID) Then 
+		Log("El fichero de estudiante existe") 
+		For Each tpLibro As Libro In B4XPages.MainPage.mapaLibros.Values
+			If stMAp.ContainsKey(tpLibro.ID) Then
 				Private s1, s2, s3, s4, s5, s6, str As String
-				s1 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.ID, 1)
-				s2 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Title, 2)
-				s3 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Writer, 3)
-				s4 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Year, 4)
-				s5 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Publisher, 5)
-				s6 = B4XPages.MainPage.pgBooks.addSpaces(tpBkt.Shelv, 6)
+				s1 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.ID, 1)
+				s2 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Título, 2)
+				s3 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Escritor, 3)
+				s4 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Ano, 4)
+				s5 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Editorial, 5)
+				s6 = B4XPages.MainPage.pgLibros.anadirEspacios(tpLibro.Estante, 6)
 				
 				str = $"${s1}${s2}${s3}${s4}${s5}${s6}"$
-				clvBooks.AddTextItem(str, tpBkt.ID)
+				clvLibros.AddTextItem(str, tpLibro.ID)
 			End If 
 		Next
 		studentFile.Close 
 	Else 
-		clvBooks.Clear
+		clvLibros.Clear
 	End If 
 End Sub
 
 
-'When a clicked a book change the color of the line to blue or white
-'in order to selecte and deselect the line. Also set Public selectedBook 
-'value to the clv index value and selectedBookID into selected Book ID
-Private Sub clvBooks_ItemClick (Index As Int, Value As Object)
-	If selectedBook = -1 Then
-		Dim p As B4XView = clvBooks.GetPanel(Index)
+' Cuando se pulse en un libro se cambia el color de su línea a azul o blanco
+' para marcar o desmarcar la línea. También se fija el valor de libroElegido
+' con el valor del índice CLV y idLibroElegido con el ID del libro
+Private Sub clvLibros_ItemClick (Índice As Int, Valor As Object)
+	If libroElegido = -1 Then
+		Dim p As B4XView = clvLibros.GetPanel(Índice)
 		p.GetView(0).Color = xui.Color_Blue
-		selectedBook = Index
-		selectedBookID = clvBooks.GetValue(selectedBook)
+		libroElegido = Índice
+		idLibroElegido = clvLibros.GetValue(libroElegido)
 	Else
-		Dim p As B4XView = clvBooks.GetPanel(selectedBook)
+		Dim p As B4XView = clvLibros.GetPanel(libroElegido)
 		p.GetView(0).Color = xui.Color_White
-		If selectedBook = Index  Then
-			selectedBook = -1
-			selectedBookID = "" 
+		If libroElegido = Índice  Then
+			libroElegido = -1
+			idLibroElegido = ""
 		Else
-			Dim p As B4XView = clvBooks.GetPanel(Index)
+			Dim p As B4XView = clvLibros.GetPanel(Índice)
 			p.GetView(0).Color = xui.Color_Blue
-			selectedBook = Index
-			selectedBookID = clvBooks.GetValue(selectedBook)
+			libroElegido = Índice
+			idLibroElegido = clvLibros.GetValue(libroElegido)
 		End If
 	End If
 
-	Log(selectedBook)
+	Log(libroElegido)
 End Sub
 
 
-Private Sub btnReturn_Click
-	If selectedStudentID <> "" And selectedBookID <> "" Then 
-		returnBook
+Private Sub btnDevolver_Click
+	If idEstudianteElegido <> "" And idLibroElegido <> "" Then 
+		devolverLibro
 	End If
 End Sub
 
 'Remove from student's kvs file borrowed book id 
-Public Sub returnBook
-	Private stdFileName As String = selectedStudentID & ".dat"
-	Log("File name: " & stdFileName)
-	Private StudentFIle As KeyValueStore
+Public Sub devolverLibro
+	Private nombreFichEst As String = idEstudianteElegido & ".dat"
+	Log("Nombre del fichero: " & nombreFichEst)
+	Private fichEstudiante As KeyValueStore
 
-	StudentFIle.Initialize(File.DirTemp, stdFileName)
-	StudentFIle.Remove(selectedBookID)
-	clvBooks.RemoveAt(selectedBook)
-	clvBooks.Refresh
-	selectedBook = -1
-	If clvBooks.Size = 0 Then 
-		StudentFIle.Close
-		Log("File empty")
-		File.Delete(File.DirTemp, selectedStudentID & ".dat")
+	fichEstudiante.Initialize(File.DirTemp, nombreFichEst)
+	fichEstudiante.Remove(idLibroElegido)
+	clvLibros.RemoveAt(libroElegido)
+	clvLibros.Refresh
+	libroElegido = -1
+	If clvLibros.Size = 0 Then
+		fichEstudiante.Close
+		Log("Fichero vacío")
+		File.Delete(File.DirTemp, idEstudianteElegido & ".dat")
 	Else 
-		StudentFIle.Close
+		fichEstudiante.Close
 	End If
 
 End Sub

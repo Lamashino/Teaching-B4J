@@ -7,14 +7,14 @@ Version=8.9
 Sub Class_Globals
 	Private Root As B4XView 'ignore
 	Private xui As XUI 'ignore
-	Private clvStudents As CustomListView
-	Private dialog As B4XDialog
-	Private txtClass As B4XFloatTextField
-	Private txtFirstName As B4XFloatTextField
+	Private clvEstudiantes As CustomListView
+	Private diálogo As B4XDialog
+	Private txtClase As B4XFloatTextField
+	Private txtNombre As B4XFloatTextField
 	Private txtID As B4XFloatTextField
-	Private txtLastName As B4XFloatTextField
-	Private txtPhone As B4XFloatTextField
-	Public selectedStudent As Int  = -1
+	Private txtApellidos As B4XFloatTextField
+	Private txtTelefono As B4XFloatTextField
+	Public estudianteElegido As Int  = -1
 End Sub
 
 'You can add more parameters here.
@@ -26,30 +26,30 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	Root.LoadLayout("fmrStudents") 
-	loadList
+	cargarLista
 End Sub
 
-'Load clv list with Students formated in a way that will shown arranged
-'Use monospaceed fonts and left allign in clv.
-Private Sub loadList
-	For Each tpSt As Student In B4XPages.MainPage.mapStudents.Values
+' Cargar una lista CLV con los estudiantes formateados con alineación a la
+' izquierda y con una fuente de espacio fijo
+Private Sub cargarLista
+	For Each tpEst As Estudiante In B4XPages.MainPage.mapaEstudiantes.Values
 		Private s1, s2, s3, s4, s5, str As String
-		s1 = addSpaces(tpSt.ID, 1)
-		s2 = addSpaces(tpSt.FirstName, 2)
-		s3 = addSpaces(tpSt.LastName, 3)
-		s4 = addSpaces(tpSt.Cls, 4)
-		s5 = addSpaces(tpSt.Phone, 5)
+		s1 = anadirEspacios(tpEst.ID, 1)
+		s2 = anadirEspacios(tpEst.Nombre, 2)
+		s3 = anadirEspacios(tpEst.Apellidos, 3)
+		s4 = anadirEspacios(tpEst.Clase, 4)
+		s5 = anadirEspacios(tpEst.Telefono, 5)
 		
 		str = $"${s1}${s2}${s3}${s4}${s5}"$
-		clvStudents.AddTextItem(str, tpSt.ID)
+		clvEstudiantes.AddTextItem(str, tpEst.ID)
 	Next
 End Sub 
 
-'Sub adds more spaces to first three items of list
-'ID gets spaces until it reach 5 lenght, 
-'FirstName and LastName gets spaces until its length be 20 
-'Class 3 spaces and Phone 12 spaces
-Private Sub addSpaces(s1 As String, pos As Int) As String
+' Esta rutina añade espacios a los primeros 3 ítems de una lista
+' A ID se añaden hasta llegar a 5 caracteres de longitud
+' A Nombre y Apellidos se le añaden hasta llegar a 20
+' A Clase se añade 3 espacios y a teléfono 12
+Private Sub anadirEspacios(s1 As String, pos As Int) As String
 	If pos = 1 Then
 		Do While s1.Length <= 5 
 			s1 = s1 & " "
@@ -71,75 +71,75 @@ Private Sub addSpaces(s1 As String, pos As Int) As String
 End Sub
 
 
-'When a clicked a student change the color of the line to blue or white
-'in order to selecte and deselect the line. Also set Public selectedStudent 
-'value to the clv index value
-Private Sub clvStudents_ItemClick (Index As Int, Value As Object)
-	If selectedStudent = -1 Then
-		Dim p As B4XView = clvStudents.GetPanel(Index)
+' Cuando se pulsa en un estudiante se cambia el color de la línea a blanco o azul
+' para marcar o desmarcar la línea. También se establece el valor de estudianteElegido
+' al valor que hay en el índice de la lista CLV
+Private Sub clvEstudiantes_ItemClick (Índice As Int, Valor As Object)
+	If estudianteElegido = -1 Then
+		Dim p As B4XView = clvEstudiantes.GetPanel(Índice)
 		p.GetView(0).Color = xui.Color_Blue
-		selectedStudent = Index
+		estudianteElegido = Índice
 	Else 
-		Dim p As B4XView = clvStudents.GetPanel(selectedStudent)
+		Dim p As B4XView = clvEstudiantes.GetPanel(estudianteElegido)
 		p.GetView(0).Color = xui.Color_White 
-		If selectedStudent = Index  Then 
-			selectedStudent = -1
+		If estudianteElegido = Índice  Then
+			estudianteElegido = -1
 		Else
-			Dim p As B4XView = clvStudents.GetPanel(Index)
+			Dim p As B4XView = clvEstudiantes.GetPanel(Índice)
 			p.GetView(0).Color = xui.Color_Blue 
-			selectedStudent = Index 
+			estudianteElegido = Índice
 		End If 
 	End If
 End Sub
 
 
-Private Sub btnInsert_Click
-	InsertStudet
+Private Sub btnInsertar_Click
+	InsertarEstudiante
 End Sub
 
 
-'Deletes a Student selected from user
-Private Sub btnDelete_Click
-	If selectedStudent <> - 1 Then 
-		B4XPages.MainPage.mapStudents.Remove(clvStudents.GetValue(selectedStudent))
-		clvStudents.RemoveAt(selectedStudent)
-		selectedStudent = -1
-		SaveStudentsFile
+'Borrar el Estudiante elegido por el usuario
+Private Sub btnBorrar_Click
+	If estudianteElegido <> - 1 Then
+		B4XPages.MainPage.mapaEstudiantes.Remove(clvEstudiantes.GetValue(estudianteElegido))
+		clvEstudiantes.RemoveAt(estudianteElegido)
+		estudianteElegido = -1
+		guardarFicheroEstudiantes
 	End If 
 End Sub
 
 
-'Creates a dialog box to insert new Student
-Private Sub InsertStudet
-	dialog.Initialize(Root)
-	dialog.Title = "Insert Student"
+'Crear un diálogo para insertar un nuevo estudiante
+Private Sub InsertarEstudiante
+	diálogo.Initialize(Root)
+	diálogo.Title = "Insertar Estudiante"
 	
 	Dim p As B4XView = xui.CreatePanel("")
 	p.SetLayoutAnimated(0,0,0, 350dip, 350dip)
 	
 	p.LoadLayout("dlgStudents")
-	dialog.PutAtTop = True
-	Wait For (dialog.ShowCustom(p, "OK", "", "Cancel")) Complete (Result As Int)
-	If Result = xui.DialogResponse_Positive Then
-		Private newStudent As Student
-		newStudent.ID = txtID.Text
-		newStudent.FirstName = txtFirstName.Text
-		newStudent.LastName = txtLastName.Text
-		newStudent.Phone = txtPhone.Text
-		newStudent.Cls = txtClass.Text 
-		B4XPages.MainPage.mapStudents.Put(newStudent.ID, newStudent) 
-		loadList
-		SaveStudentsFile
+	diálogo.PutAtTop = True
+	Wait For (diálogo.ShowCustom(p, "OK", "", "Cancelar")) Complete (Resultado As Int)
+	If Resultado = xui.DialogResponse_Positive Then
+		Private nuevoEstudiante As Estudiante
+		nuevoEstudiante.ID = txtID.Text
+		nuevoEstudiante.Nombre = txtNombre.Text
+		nuevoEstudiante.Apellidos = txtApellidos.Text
+		nuevoEstudiante.Telefono = txtTelefono.Text
+		nuevoEstudiante.Clase = txtClase.Text
+		B4XPages.MainPage.mapaEstudiantes.Put(nuevoEstudiante.ID, nuevoEstudiante)
+		cargarLista
+		guardarFicheroEstudiantes
 	End If
 End Sub
 
 
-Private Sub SaveStudentsFile
+Private Sub guardarFicheroEstudiantes
 	Private str As String
-	For Each tpSt As Student In B4XPages.MainPage.mapStudents.Values
-		str = str & $"${tpSt.ID};${tpSt.FirstName};${tpSt.LastName};${tpSt.Cls};${tpSt.Phone}${CRLF}"$
+	For Each tpEst As Estudiante In B4XPages.MainPage.mapaEstudiantes.Values
+		str = str & $"${tpEst.ID};${tpEst.Nombre};${tpEst.Apellidos};${tpEst.Clase};${tpEst.Telefono}${CRLF}"$
 		File.WriteString(File.DirTemp, "students.txt", str)
 	Next 
-	Log("Saved to folder: " & File.DirTemp)
+	Log("Guardado en la carpeta: " & File.DirTemp)
 End Sub
 
