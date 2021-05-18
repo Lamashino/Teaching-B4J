@@ -71,7 +71,7 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | ·  Dialogs - Diálogos                                                                                 |       |
 |              |                              | ·  Plantillas                                                                                         |       |
 | 14           | Matrices - Arrays            | ·  Matrices unidimensionales (o Vectores)                                                             | 4     |
-|              |                              | ·    Operaciones básicas con matrices                                                                  |       |
+|              |                              | ·    Operaciones básicas con matrices                                                                 |       |
 |              |                              | ·    Elemento Máximo – Mínimo                                                                         |       |
 |              |                              | ·    Búsqueda lineal                                                                                  |       |
 |              |                              | ·    Búsqueda binaria                                                                                 |       |
@@ -92,6 +92,6 @@ A continuación, mostramos una serie de lecciones para enseñar B4J a estudiante
 |              |                              | · Ficheros KVS                                                                                        |       |
 |              |                              | · CustomListView                                                                                      |       |
 |              |                              | · B4XComboBox                                                                                         |       |
-| 19           | Proyecto Final               | • Usar los conocimientos adquiridos para crear un proyecto final                                      | 10    |
+| 19           | Proyecto Final               | · Usar los conocimientos adquiridos para crear un proyecto final                                      | 10    |
 | 20           | De B4J a B4A                 | Cómo convertir una aplicación de B4J a B4A                                                            | 2     |
-| Horas totales|                              |                                                                                                       | 57    |
+| Horas totales|                              |                                                                                                       | 63    |
